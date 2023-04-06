@@ -12,12 +12,10 @@ This class library may be used to build many of the NG9-1-1 functional elements 
 This project has no external dependencies.
 
 # Documentation
-The documentation pages project for this project if called [Ng911LibDocumentation](https://phrsite.github.io/Ng911LibDocumentation). The documentation web site include class documentation and articles that explain ussage of the classes in this library.
+The documentation pages project for this project is called [Ng911LibDocumentation](https://phrsite.github.io/Ng911LibDocumentation). The documentation web site includes class documentation and articles that explain ussage of the classes in this library.
 
 # Installation
 This class library is available on NuGet. It targets .NET 7.
-
-
 
 # Project Structure
 
