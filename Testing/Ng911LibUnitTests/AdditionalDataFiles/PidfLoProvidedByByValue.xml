@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+    xmlns:gbp="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy"
+    xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model"
+		xmlns:gs="http://www.opengis.net/pidflo/1.0"
+		xmlns:gml="http://www.opengis.net/gml">
+    <dm:device id="target123-1">
+        <gp:geopriv>
+            <gp:location-info>
+                <civicAddress xmlns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
+                    <country>US</country>
+                    <A1>CA</A1>
+                    <A3>Any City</A3>
+                    <RD>Main</RD>
+                    <STS>Street</STS>
+                    <HNO>311</HNO>
+                    <PC>91234</PC>
+                </civicAddress>
+            </gp:location-info>
+            <gp:usage-rules>
+                <gbp:retransmission-allowed>true</gbp:retransmission-allowed>
+                <gbp:retention-expiry>2016-12-10T20:00:00Z </gbp:retention-expiry>
+            </gp:usage-rules>
+            <gp:method>802.11</gp:method>
+
+            <provided-by xmlns="urn:ietf:params:xml:ns:EmergencyCallData">
+                <EmergencyCallDataValue>
+                    <com:EmergencyCallData.Comment xmlns:com="urn:ietf:params:xml:ns:EmergencyCallData:Comment">
+                        <com:DataProviderReference>string0987654321@example.org</com:DataProviderReference>
+                        <com:Comment xml:lang="en">This is an example of a comment.</com:Comment>
+                    </com:EmergencyCallData.Comment>
+                    <dev:EmergencyCallData.DeviceInfo xmlns:dev="urn:ietf:params:xml:ns:EmergencyCallData:DeviceInfo">
+                        <dev:DataProviderReference>d4b3072df.201409182208075@example.org </dev:DataProviderReference>
+                        <dev:DeviceClassification>fixed</dev:DeviceClassification>
+                        <dev:DeviceMfgr>Nokia</dev:DeviceMfgr>
+                        <dev:DeviceModelNr>Lumia 800</dev:DeviceModelNr>
+                        <dev:UniqueDeviceID TypeOfDeviceID="IMEI">35788104</dev:UniqueDeviceID>
+                    </dev:EmergencyCallData.DeviceInfo>
+                    <ad:EmergencyCallData.ProviderInfo xmlns:ad="urn:ietf:params:xml:ns:EmergencyCallData:ProviderInfo">
+                        <ad:DataProviderReference>string0987654321@example.org </ad:DataProviderReference>
+                        <ad:DataProviderString>Smith Telecom Inc.</ad:DataProviderString>
+                        <ad:ProviderID>urn:nena:companyid:ID123</ad:ProviderID>
+                        <ad:ProviderIDSeries>NENA</ad:ProviderIDSeries>
+                        <ad:TypeOfProvider>Telecom Provider</ad:TypeOfProvider>
+                        <ad:ContactURI>tel:+1-201-555-0123</ad:ContactURI>
+                        <ad:Language>en</ad:Language>
+                        <ad:DataProviderContact xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                            <vcard>
+                                <fn>
+                                    <text>John Smith</text>
+                                </fn>
+                                <n>
+                                    <surname>Smith</surname>
+                                    <given>John</given>
+                                    <additional/>
+                                    <prefix/>
+                                    <suffix>ENP</suffix>
+                                </n>
+                                <bday>
+                                    <date>0203</date>
+                                </bday>
+                                <anniversary>
+                                    <date-time>20090808T1430-0500</date-time>
+                                </anniversary>
+                                <gender>
+                                    <sex>M</sex>
+                                </gender>
+                                <lang>
+                                    <parameters>
+                                        <pref>
+                                            <integer>1</integer>
+                                        </pref>
+                                    </parameters>
+                                    <language-tag>en</language-tag>
+                                </lang>
+                                <lang>
+                                    <parameters>
+                                        <pref>
+                                            <integer>2</integer>
+                                        </pref>
+                                    </parameters>
+                                    <language-tag>de</language-tag>
+                                </lang>
+                                <org>
+                                    <parameters>
+                                        <type>
+                                            <text>work</text>
+                                        </type>
+                                    </parameters>
+                                    <text>Example VoIP Provider</text>
+                                </org>
+                                <adr>
+                                    <parameters>
+                                        <type>
+                                            <text>work</text>
+                                        </type>
+                                        <label>
+                                            <text>John Smith
+                    123 First St.
+                    New York, NY 12345</text>
+                                        </label>
+                                    </parameters>
+                                    <pobox/>
+                                    <ext/>
+                                    <street>123 First St.</street>
+                                    <locality>New York</locality>
+                                    <region>NY</region>
+                                    <code>12345</code>
+                                    <country>USA</country>
+                                </adr>
+                                <tel>
+                                    <parameters>
+                                        <type>
+                                            <text>work</text>
+                                            <text>voice</text>
+                                        </type>
+                                    </parameters>
+                                    <uri>tel:+1 800-123-4567</uri>
+                                </tel>
+                                <email>
+                                    <parameters>
+                                        <type>
+                                            <text>work</text>
+                                        </type>
+                                    </parameters>
+                                    <text>John.Smith@SmithTelecom.com</text>
+                                </email>
+                                <geo>
+                                    <parameters>
+                                        <type>
+                                            <text>work</text>
+                                        </type>
+                                    </parameters>
+                                    <uri>geo:60.210796,24.812924</uri>
+                                </geo>
+                                <key>
+                                    <parameters>
+                                        <type>
+                                            <text>work</text>
+                                        </type>
+                                    </parameters>
+                                    <uri>http://www.SmithTelecom.com/key.asc </uri>
+                                </key>
+                                <tz>
+                                    <text>America/Eastern</text>
+                                </tz>
+                                <url>
+                                    <parameters>
+                                        <type>
+                                            <text>work</text>
+                                        </type>
+                                    </parameters>
+                                    <uri>http://www.SmithTelecom.com</uri>
+                                </url>
+                            </vcard>
+                        </ad:DataProviderContact>
+                    </ad:EmergencyCallData.ProviderInfo>
+                    <svc:EmergencyCallData.ServiceInfo xmlns:svc="urn:ietf:params:xml:ns:EmergencyCallData:ServiceInfo">
+                        <svc:DataProviderReference>2468.IBOC.MLTS.1359@example.org </svc:DataProviderReference>
+                        <svc:ServiceEnvironment>Business</svc:ServiceEnvironment>
+                        <svc:ServiceType>MLTS-hosted</svc:ServiceType>
+                        <svc:ServiceMobility>Fixed</svc:ServiceMobility>
+                    </svc:EmergencyCallData.ServiceInfo>
+                    <EmergencyCallData.SubscriberInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" privacyRequested="false" xmlns="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo">
+                        <DataProviderReference>FEABFECD901@example.org</DataProviderReference>
+                        <SubscriberData>
+                        <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+                            <adr>
+                            <parameters>
+                                <type>
+                                <text>home</text>
+                                </type>
+                                <label>
+                                <text>Bill Jones
+                    311 Main St.
+                    SomeCity, CA 93065</text>
+                                </label>
+                            </parameters>
+                            <pobox />
+                            <ext />
+                            <street>311 Main St.</street>
+                            <locality>SomeCity</locality>
+                            <region>CA</region>
+                            <code>12345</code>
+                            <country>USA</country>
+                            </adr>
+                            <anniversary>
+                            <date-time>20090808T1430-0500</date-time>
+                            </anniversary>
+                            <bday>
+                            <date>0203</date>
+                            </bday>
+                            <email>
+                            <parameters>
+                                <type>
+                                <text>home</text>
+                                </type>
+                            </parameters>
+                            <text>BillJones@hotmail.com</text>
+                            </email>
+                            <email>
+                            <parameters>
+                                <type>
+                                <text>work</text>
+                                </type>
+                            </parameters>
+                            <text>BillJones@abc.com</text>
+                            </email>
+                            <fn>
+                            <text>Bill Jones</text>
+                            </fn>
+                            <geo>
+                            <parameters>
+                                <type>
+                                <text>work</text>
+                                </type>
+                            </parameters>
+                            <uri>geo:46.766336,-71.28955</uri>
+                            </geo>
+                            <key>
+                            <parameters>
+                                <type>
+                                <text>work</text>
+                                </type>
+                            </parameters>
+                            <uri>http://www.viagenie.ca/Bill.Jones/Jones.asc</uri>
+                            </key>
+                            <lang>
+                            <parameters>
+                                <pref>
+                                <integer>1</integer>
+                                </pref>
+                            </parameters>
+                            <language-tag>en</language-tag>
+                            </lang>
+                            <lang>
+                            <parameters>
+                                <pref>
+                                <integer>2</integer>
+                                </pref>
+                            </parameters>
+                            <language-tag>fr</language-tag>
+                            </lang>
+                            <n>
+                            <surname>Jones</surname>
+                            <given>Bill</given>
+                            <additional />
+                            <prefix />
+                            </n>
+                            <org>
+                            <parameters>
+                                <type>
+                                <text>work</text>
+                                </type>
+                            </parameters>
+                            <text>Viagenie</text>
+                            </org>
+                            <gender>
+                            <sex>M</sex>
+                            </gender>
+                            <tel>
+                            <parameters>
+                                <type>
+                                <text>home</text>
+                                <text>voice</text>
+                                </type>
+                            </parameters>
+                            <uri>tel:+1 818 555 3333</uri>
+                            </tel>
+                            <tel>
+                            <parameters>
+                                <type>
+                                <text>cell</text>
+                                </type>
+                            </parameters>
+                            <uri>tel:+1 818 444 1212</uri>
+                            </tel>
+                            <tz>
+                            <text>America/Pacific</text>
+                            </tz>
+                            <url>
+                            <parameters>
+                                <type>
+                                <text>home</text>
+                                </type>
+                            </parameters>
+                            <uri>http://nomis80.org</uri>
+                            </url>
+                        </vcard>
+                        </SubscriberData>
+                    </EmergencyCallData.SubscriberInfo>
+                </EmergencyCallDataValue>
+            </provided-by>
+
+        </gp:geopriv>
+        <dm:deviceID>mac:00-0d-4b-30-72-df</dm:deviceID>
+        <dm:timestamp>2015-07-09T20:57:29Z</dm:timestamp>
+    </dm:device>
+    <dm:person id="12345">
+      <gp:geopriv>
+        <gp:location-info>
+          <gs:Circle xmlns="http://www.opengis.net/gml" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>34.247493 -118.791885</gml:pos>
+            <gs:radius uom="urn:ogc:def:uom:EPSG::9001">
+              50
+            </gs:radius>
+          </gs:Circle>
+        </gp:location-info>
+        <gp:usage-rules>
+          <gbp:retransmission-allowed>true</gbp:retransmission-allowed>
+          <gbp:retention-expiry>2016-12-10T20:00:00Z </gbp:retention-expiry>
+        </gp:usage-rules>
+        <gp:method>802.11</gp:method>
+      </gp:geopriv>
+    </dm:person>
+</presence>

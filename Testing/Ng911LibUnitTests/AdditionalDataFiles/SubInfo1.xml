@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EmergencyCallData.SubscriberInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" privacyRequested="false" xmlns="urn:ietf:params:xml:ns:EmergencyCallData:SubscriberInfo">
+  <DataProviderReference>FEABFECD901@example.org</DataProviderReference>
+  <SubscriberData>
+    <vcard xmlns="urn:ietf:params:xml:ns:vcard-4.0">
+      <adr>
+        <parameters>
+          <type>
+            <text>home</text>
+          </type>
+        </parameters>
+        <street>500 West St.</street>
+        <locality>AURORA</locality>
+        <region>IL</region>
+        <code>12345</code>
+        <country>USA</country>
+      </adr>
+      <email>
+        <parameters>
+          <type>
+            <text>home</text>
+          </type>
+        </parameters>
+        <text>JohnSmith@gmail.com</text>
+      </email>
+      <email>
+        <parameters>
+          <type>
+            <text>work</text>
+          </type>
+        </parameters>
+        <text>JohnSmith@abc.com</text>
+      </email>
+      <fn>
+        <text>John Smith</text>
+      </fn>
+      <lang>
+        <parameters>
+          <pref>
+            <integer>1</integer>
+          </pref>
+        </parameters>
+        <language-tag>en</language-tag>
+      </lang>
+      <n>
+        <surname>Smith</surname>
+        <given>John</given>
+      </n>
+      <org>
+        <parameters>
+          <type>
+            <text>work</text>
+          </type>
+        </parameters>
+        <text>ABC Corp.</text>
+      </org>
+      <gender>
+        <sex>M</sex>
+      </gender>
+      <tel>
+        <parameters>
+          <type>
+            <text>home</text>
+            <text>voice</text>
+          </type>
+        </parameters>
+        <uri>tel:+1 630 681 5006</uri>
+      </tel>
+      <tel>
+        <parameters>
+          <type>
+            <text>cell</text>
+          </type>
+        </parameters>
+        <uri>tel:+1 630 681 0001</uri>
+      </tel>
+    </vcard>
+  </SubscriberData>
+</EmergencyCallData.SubscriberInfo>

@@ -1,0 +1,30 @@
+[
+    "vcard",
+    [
+        [
+            "version",
+            {},
+            "text",
+            "4.0"
+        ],
+        [
+            "fn",
+            {},
+            "text",
+            "John Doe"
+        ],
+        [
+            "gender",
+            {},
+            "text",
+            "M"
+        ],
+        [
+            "categories",
+            {},
+            "text",
+            "computers",
+            "cameras"
+        ]
+    ]
+]

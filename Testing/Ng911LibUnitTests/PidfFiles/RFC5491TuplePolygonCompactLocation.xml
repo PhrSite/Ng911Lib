@@ -1,0 +1,28 @@
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:gml="http://www.opengis.net/gml"
+entity="pres:hexagon@example.com">
+<tuple id="polygon-poslist">
+<status>
+<gp:geopriv>
+<gp:location-info>
+<gml:Polygon srsName="urn:ogc:def:crs:EPSG::4326">
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+43.311 -73.422 43.111 -73.322
+43.111 -73.222 43.311 -73.122
+43.411 -73.222 43.411 -73.322
+43.311 -73.422
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</gp:location-info>
+<gp:usage-rules/>
+<gp:method>Wiremap</gp:method>
+</gp:geopriv>
+</status>
+<timestamp>2007-06-22T20:57:29Z</timestamp>
+</tuple>
+</presence>

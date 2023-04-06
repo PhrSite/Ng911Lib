@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<veds:AutomatedCrashNotification xmlns:s="http://niem.gov/niem/structures/2.0" xsi:schemaLocation="http://www.veds.org/acn/3.1 ../Schema/veds/3.1/veds.xsd" xmlns:j="http://niem.gov/niem/domains/jxdm/4.1" xmlns:m="http://niem.gov/niem/domains/maritime/2.1" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:veds="http://www.veds.org/acn/3.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- Addional Details Text -->
+	<nc:DocumentDescriptionText>Vehicle accident 2018-01-04</nc:DocumentDescriptionText>
+	<nc:DocumentPostDate>
+		<!-- Transmission Date Time -->
+		<nc:DateTime>2018-01-04T02:29:00.0Z</nc:DateTime>
+	</nc:DocumentPostDate>
+	<nc:DocumentReceivedDate>
+		<!-- Received Date/Time -->
+		<nc:DateTime>2018-01-04T02:30:00.0Z</nc:DateTime>
+	</nc:DocumentReceivedDate>
+	<!-- Event Verified Indicator -->
+	<veds:EventVerifiedIndicator>true</veds:EventVerifiedIndicator>
+	<veds:ContactActivity>
+		<nc:ActivityDate>
+			<!-- Contact Date/Time -->
+			<nc:DateTime>2018-01-04T02:29:35.0Z</nc:DateTime>
+		</nc:ActivityDate>
+		<nc:ContactTelephoneNumber>
+			<nc:FullTelephoneNumber>
+				<!-- Contact Activity Telephone Number -->
+				<nc:TelephoneNumberFullID>888-555-1212</nc:TelephoneNumberFullID>
+			</nc:FullTelephoneNumber>
+		</nc:ContactTelephoneNumber>
+	</veds:ContactActivity>
+	<veds:ContactInformation s:id="CXT1">
+		<!-- Emergency Contact Email -->
+		<nc:ContactEmailID>jsponder@gmail.com</nc:ContactEmailID>
+		<nc:ContactTelephoneNumber>
+			<!-- Emergency Contact Phone Number -->
+			<nc:FullTelephoneNumber>
+				<nc:TelephoneNumberFullID>602-555-1212</nc:TelephoneNumberFullID>
+			</nc:FullTelephoneNumber>
+		</nc:ContactTelephoneNumber>
+		<!-- Emergency Contact Name -->
+		<nc:ContactEntityDescriptionText>Janet Sponder</nc:ContactEntityDescriptionText>
+		<veds:ContactIdentification>
+			<!-- Contact ID -->
+			<nc:IdentificationID>1</nc:IdentificationID>
+		</veds:ContactIdentification>
+	</veds:ContactInformation>
+	<veds:Crash s:id="CRASH1">
+		<nc:ActivityIdentification>
+			<!-- Incident ID -->
+			<nc:IdentificationID>CR2346</nc:IdentificationID>
+		</nc:ActivityIdentification>
+		<nc:ActivityDate>
+			<!-- Incident Date/Time -->
+			<nc:DateTime>2018-01-04T02:29:00.0Z</nc:DateTime>
+		</nc:ActivityDate>
+		<!-- Vehicle Passenger Quantity -->
+		<j:DrivingIncidentPassengerQuantityText>2</j:DrivingIncidentPassengerQuantityText>
+		<m:ConveyanceHeadingMeasure>
+			<!-- Direction vehicle was traveling in degrees -->
+			<nc:MeasurePointValue>90</nc:MeasurePointValue>
+		</m:ConveyanceHeadingMeasure>
+		<veds:CrashPerson>
+			<nc:RoleOfPersonReference s:ref="PERS1"/>
+			<veds:CrashPersonIdentification>
+				<!-- Person ID -->
+				<nc:IdentificationID>001</nc:IdentificationID>
+			</veds:CrashPersonIdentification>
+			<!-- Person Role Category Code -->
+			<veds:CrashPersonRoleCode>PRIMARY</veds:CrashPersonRoleCode>
+		</veds:CrashPerson>
+		<veds:CrashVehicle>
+			<!-- Vehicle Primary Color -->
+			<nc:ConveyanceColorPrimaryText>Red</nc:ConveyanceColorPrimaryText>
+			<!-- Vehicle Secondary Color -->
+			<nc:ConveyanceColorSecondaryText>Black</nc:ConveyanceColorSecondaryText>
+			<!-- Vehicle Make Name -->
+			<nc:ItemMakeName>Ford</nc:ItemMakeName>
+			<!-- Vehicle Model Name -->
+			<nc:ItemModelName>Mustang</nc:ItemModelName>
+			<!-- Vehicle Model Year -->
+			<nc:ItemModelYearDate>2018</nc:ItemModelYearDate>
+			<nc:ConveyanceRegistrationPlateIdentification>
+				<!-- Vehicle Plate Number -->
+				<nc:IdentificationID>ABC123</nc:IdentificationID>
+				<!-- Vehicle Plate State -->
+				<nc:IdentificationJurisdictionText>Kansas</nc:IdentificationJurisdictionText>
+			</nc:ConveyanceRegistrationPlateIdentification>
+			<!-- Vehicle Interior Color -->
+			<nc:VehicleColorInteriorText>Gray</nc:VehicleColorInteriorText>
+			<nc:VehicleIdentification>
+				<!-- VIN -->
+				<nc:IdentificationID>1HGS43423552234</nc:IdentificationID>
+				<nc:IdentificationJurisdictionText/>
+			</nc:VehicleIdentification>
+			<veds:Airbag>
+				<!-- Airbag Category Code -->
+				<veds:AirbagCategoryCode>CURTAIN</veds:AirbagCategoryCode>
+				<veds:AirbagDeployedIndicator>true</veds:AirbagDeployedIndicator>
+			</veds:Airbag>
+			<veds:Airbag>
+				<!-- Airbag Category Code -->
+				<veds:AirbagCategoryCode>CURTAIN</veds:AirbagCategoryCode>
+				<veds:AirbagDeployedIndicator>true</veds:AirbagDeployedIndicator>
+			</veds:Airbag>
+			<!-- DOT Number -->
+			<j:CommercialCarrierUSDOTNumber>0000000</j:CommercialCarrierUSDOTNumber>
+			<!-- Vehicle Convertible Indicator -->
+			<veds:ConvertibleIndicator>true</veds:ConvertibleIndicator>
+			<nc:Image>
+				<!-- Digital Image Location URI -->
+				<nc:BinaryLocationURI>http://google.com</nc:BinaryLocationURI>
+			</nc:Image>
+			<!-- Power Source Category Code -->
+			<veds:PowerSourceCategoryCode>BACKUP</veds:PowerSourceCategoryCode>
+			<!-- Vehicle Body Type -->
+			<j:VehicleBodyCategoryCode>101</j:VehicleBodyCategoryCode>
+			<!-- Vehicle Autonomous Capability Code -->
+			<veds:VehicleAutonomousModeCode>1</veds:VehicleAutonomousModeCode>
+			<veds:VehicleCrashPulse>
+				<nc:ActivityIdentification>
+					<!-- Impact ID -->
+					<nc:IdentificationID>001</nc:IdentificationID>
+				</nc:ActivityIdentification>
+				<veds:CrashPulseChangeInVelocityMeasure>
+					<!-- Change in velocity -->
+					<nc:MeasurePointValue>-32.2</nc:MeasurePointValue>
+					<!-- Change in velocity unit -->
+					<nc:MeasureUnitText>KPH</nc:MeasureUnitText>
+				</veds:CrashPulseChangeInVelocityMeasure>
+				<!-- Princial Direction of Force Text-->
+				<veds:CrashPulsePrincipalDirectionOfForceValue>9</veds:CrashPulsePrincipalDirectionOfForceValue>
+				<!-- Rollover quarter turns number -->
+				<veds:CrashPulseRolloverQuarterTurnsValue>3</veds:CrashPulseRolloverQuarterTurnsValue>
+			</veds:VehicleCrashPulse>
+			<!-- Vehicle Human Driver Engaged Indicator -->
+			<veds:VehicleHumanDriverEngagedIndicator>true</veds:VehicleHumanDriverEngagedIndicator>
+			<!-- Vehicle Pedestrian Protection Device Deployed Indicator -->
+			<veds:VehiclePedestrianProtectionDeviceDeployedIndicator>true</veds:VehiclePedestrianProtectionDeviceDeployedIndicator>
+			<!-- Vehicle Propulsion Storage Type Codes -->
+			<veds:VehiclePropulsionStorageCode>GASOLINE</veds:VehiclePropulsionStorageCode>
+			<veds:VehiclePropulsionStorageCode>ELECTRIC</veds:VehiclePropulsionStorageCode>
+			<!-- Vehicle Roll Bar Deployed Indicator -->
+			<veds:VehicleRollbarDeployedIndicator>true</veds:VehicleRollbarDeployedIndicator>
+			<!-- Vehicle Rollover Indicator -->
+			<veds:VehicleRolloverIndicator>true</veds:VehicleRolloverIndicator>
+			<!-- Driver Seat Info -->
+			<veds:VehicleSeat>
+				<!-- Seat Category Code, Front Row Middle -->
+				<veds:VehicleSeatLocationCategoryCode>9</veds:VehicleSeatLocationCategoryCode>
+				<!-- Occupied Indicator -->
+				<veds:VehicleSeatOccupiedIndicator>true</veds:VehicleSeatOccupiedIndicator>
+				<!-- Belt Fastened Indicator -->
+				<veds:VehicleSeatbeltFastenedIndicator>true</veds:VehicleSeatbeltFastenedIndicator>
+				<!-- Belt Monitored Indicator -->
+				<veds:VehicleSeatbeltMonitoredIndicator>true</veds:VehicleSeatbeltMonitoredIndicator>
+			</veds:VehicleSeat>
+			<!-- Front Passenter  Seat Info -->
+			<veds:VehicleSeat>
+				<!-- Seat Category Code -->
+				<veds:VehicleSeatLocationCategoryCode>2</veds:VehicleSeatLocationCategoryCode>
+				<!-- Occupied Indicator -->
+				<veds:VehicleSeatOccupiedIndicator>true</veds:VehicleSeatOccupiedIndicator>
+				<!-- Belt Fastened Indicator -->
+				<veds:VehicleSeatbeltFastenedIndicator>true</veds:VehicleSeatbeltFastenedIndicator>
+				<!-- Belt Monitored Indicator -->
+				<veds:VehicleSeatbeltMonitoredIndicator>true</veds:VehicleSeatbeltMonitoredIndicator>
+			</veds:VehicleSeat>
+			<nc:VehicleUnladenWeightMeasure>
+				<nc:MeasurePointValue>6000</nc:MeasurePointValue>
+			</nc:VehicleUnladenWeightMeasure>
+		</veds:CrashVehicle>
+		<!-- Fuel Leaking Indicator -->
+		<veds:FuelLeakingIndicator>false</veds:FuelLeakingIndicator>
+		<!-- Multiple Impacts Indicator -->
+		<veds:MultipleImpactsIndicator>false</veds:MultipleImpactsIndicator>
+		<!-- Severe Injury Indicator -->
+		<veds:SevereInjuryIndicator>true</veds:SevereInjuryIndicator>
+		<!-- Final Rest Orientation Category -->
+		<veds:VehicleFinalRestOrientationCategoryCode>Roof</veds:VehicleFinalRestOrientationCategoryCode>
+		<!-- Vehicle Fire Indicator -->
+		<veds:VehicleFireIndicator>false</veds:VehicleFireIndicator>
+	</veds:Crash>
+	<nc:Location s:id="LOC1">
+		<nc:LocationCrossStreet>
+			<!-- Cross Street Description -->
+			<nc:CrossStreetDescriptionText>Enighed and FR3900</nc:CrossStreetDescriptionText>
+		</nc:LocationCrossStreet>
+		<!-- Location Description -->
+		<nc:LocationDescriptionText>Near Blue Silo</nc:LocationDescriptionText>
+		<nc:LocationTwoDimensionalGeographicCoordinate>
+			<!-- Datum -->
+			<nc:GeographicDatumCode>NAR-C</nc:GeographicDatumCode>
+			<nc:GeographicCoordinateLatitude>
+				<!-- Latitude -->
+				<nc:LatitudeDegreeValue>37.09024</nc:LatitudeDegreeValue>
+			</nc:GeographicCoordinateLatitude>
+			<nc:GeographicCoordinateLongitude>
+				<!-- Longitude -->
+				<nc:LongitudeDegreeValue>-95.712891</nc:LongitudeDegreeValue>
+			</nc:GeographicCoordinateLongitude>
+		</nc:LocationTwoDimensionalGeographicCoordinate>
+	</nc:Location>
+	<veds:NotificationDestinationOrganization s:id="ORG1">
+		<nc:OrganizationIdentification>
+			<nc:IdentificationID>43</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<!-- Agency Notified -->
+		<nc:OrganizationName>City Police</nc:OrganizationName>
+		<nc:EmployeeIdentification>
+			<!-- Employee ID -->
+			<nc:IdentificationID>234</nc:IdentificationID>
+		</nc:EmployeeIdentification>
+	</veds:NotificationDestinationOrganization>
+	<!-- Notification Device Type Code -->
+	<veds:NotificationDeviceTypeCode>AIRBAG</veds:NotificationDeviceTypeCode>
+	<veds:NotificationOriginatingOrganization>
+		<nc:OrganizationIdentification>
+			<!-- Incident Originator Organization ID -->
+			<nc:IdentificationID>VEDS</nc:IdentificationID>
+		</nc:OrganizationIdentification>
+		<!-- Provider Name -->
+		<nc:OrganizationName>OnStar</nc:OrganizationName>
+		<nc:EmployeeIdentification>
+			<!-- Incident Originator Employee ID -->
+			<nc:IdentificationID>323</nc:IdentificationID>
+		</nc:EmployeeIdentification>
+		<!-- Incident Originator Indicator -->
+		<veds:IncidentOriginatorIndicator>true</veds:IncidentOriginatorIndicator>
+		<!-- Originator Category Code -->
+		<veds:VEDSNotificationOriginatorCode>ROADSIDE</veds:VEDSNotificationOriginatorCode>
+	</veds:NotificationOriginatingOrganization>
+	<veds:Person s:id="PERS1">
+		<nc:PersonBirthDate>
+			<!-- Date of Birth -->
+			<nc:Date>2001-04-02</nc:Date>
+		</nc:PersonBirthDate>
+		<nc:PersonName>
+			<!-- Person Full Name -->
+			<nc:PersonFullName>Jamie Johnson</nc:PersonFullName>
+		</nc:PersonName>
+		<nc:PersonPrimaryLanguage>
+			<nc:LanguageName/>
+		</nc:PersonPrimaryLanguage>
+		<!-- Sex -->
+		<nc:PersonSexCode>M</nc:PersonSexCode>
+		<nc:DriverLicense>
+			<nc:DriverLicenseIdentification>
+				<!-- Driver License Number -->
+				<nc:IdentificationID>KS-123456</nc:IdentificationID>
+				<!-- Driver License State -->
+				<nc:IdentificationJurisdictionText>Kansas</nc:IdentificationJurisdictionText>
+			</nc:DriverLicenseIdentification>
+		</nc:DriverLicense>
+		<!-- Hearing Impaired Indicator -->
+		<veds:PersonHearingImpairedIndicator>false</veds:PersonHearingImpairedIndicator>
+		<!-- Mobility Impaired Indicator -->
+		<veds:PersonMobilityImpairedIndicator>false</veds:PersonMobilityImpairedIndicator>
+		<!-- Other Conditions Text -->
+		<veds:PersonOtherConditionsText>
+		</veds:PersonOtherConditionsText>
+		<!-- Speech Impaired Indicator -->
+		<veds:PersonSpeechImpairedIndicator>false</veds:PersonSpeechImpairedIndicator>
+	</veds:Person>
+	<j:ActivityLocationAssociation>
+		<nc:ActivityReference s:ref="CRASH1"/>
+		<nc:LocationReference s:ref="LOC1"/>
+	</j:ActivityLocationAssociation>
+	<nc:OrganizationContactInformationAssociation>
+		<nc:OrganizationReference s:ref="ORG1"/>
+		<nc:ContactInformationReference s:ref="CXT1"/>
+	</nc:OrganizationContactInformationAssociation>
+</veds:AutomatedCrashNotification>

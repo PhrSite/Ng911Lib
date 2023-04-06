@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<presence
+xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:dyn="urn:ietf:params:xml:ns:pidf:geopriv10:dynamic"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:gs="http://www.opengis.net/pidflo/1.0"
+entity="pres:alice@example.com">
+    <dm:device id="abc123">
+        <gp:geopriv>
+            <gp:location-info>
+                <gs:Circle srsName="urn:ogc:def:crs:EPSG::4326">
+                    <gml:pos>42.5463 -73.2512</gml:pos>
+                    <gs:radius uom="urn:ogc:def:uom:EPSG::9001">
+                        100
+                    </gs:radius>
+                </gs:Circle>
+                <dyn:Dynamic>
+                    <dyn:speed>12</dyn:speed>
+                </dyn:Dynamic>
+            </gp:location-info>
+            <gp:usage-rules/>
+            <method>gps</method>
+        </gp:geopriv>
+        <timestamp>2009-06-22T20:57:29Z</timestamp>
+        <dm:deviceID>mac:1234567890ab</dm:deviceID>
+    </dm:device>
+</presence>

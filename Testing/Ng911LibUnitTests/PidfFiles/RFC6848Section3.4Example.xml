@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:cl="urn:ietf:params:xml:ns:pidf:geopriv10:civicLoc"
+entity="pres:geotarget@example.com">
+<tuple id="sg89ae">
+<status>
+<gp:geopriv>
+<gp:location-info>
+<civicAddress xml:lang="en-US"
+xmlns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr"
+xmlns:post="http://postsoftheworld.example.com/ns"
+xmlns:ap="http://example.com/airport/5.0">
+<country>US</country>
+<A1>CA</A1>
+<post:lamp>2471</post:lamp>
+<post:pylon>AQ-374-4(c)</post:pylon>
+<ap:airport>LAX</ap:airport>
+<ap:terminal>Tom Bradley</ap:terminal>
+<ap:concourse>G</ap:concourse>
+<ap:gate>36B</ap:gate>
+</civicAddress>
+</gp:location-info>
+<gp:usage-rules>
+<gp:retransmission-allowed>yes</gp:retransmission-allowed>
+<gp:retention-expiry>2003-06-23T04:57:29Z</gp:retention-expiry>
+</gp:usage-rules>
+</gp:geopriv>
+</status>
+<timestamp>2003-06-22T20:57:29Z</timestamp>
+</tuple>
+</presence>

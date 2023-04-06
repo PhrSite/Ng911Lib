@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:cl="urn:ietf:params:xml:ns:pidf:geopriv10:civicLoc"
+entity="pres:geotarget@example.com">
+<tuple id="sg89ae">
+<status>
+<gp:geopriv>
+<gp:location-info>
+<civicAddress xml:lang="en-GB"
+xmlns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr"
+xmlns:cdc="http://devon.canals.example.com/civic">
+<country>UK</country>
+<A1>Devon</A1>
+<A3>Monkokehampton</A3>
+<RD>Deckport</RD>
+<STS>Cross</STS>
+<cdc:bridge>21451338</cdc:bridge>
+</civicAddress>
+</gp:location-info>
+<gp:usage-rules>
+<gp:retransmission-allowed>yes</gp:retransmission-allowed>
+<gp:retention-expiry>2003-06-23T04:57:29Z</gp:retention-expiry>
+</gp:usage-rules>
+</gp:geopriv>
+</status>
+<timestamp>2003-06-22T20:57:29Z</timestamp>
+</tuple>
+</presence>

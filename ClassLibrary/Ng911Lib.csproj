@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Title>NG9-1-1 Class Library</Title>
+    <Authors>Philip Reichl</Authors>
+    <Description>A class library containing classes to handle the data schemas for NG9-1-1</Description>
+    <PackageOutputPath>\_MyProjects\NuGetPackages</PackageOutputPath>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <DocumentationFile>C:\_MyProjects\Ng911Lib\Ng911Lib.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;8981</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;8981</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="SipRecMetaData\" />
+  </ItemGroup>
+
+</Project>

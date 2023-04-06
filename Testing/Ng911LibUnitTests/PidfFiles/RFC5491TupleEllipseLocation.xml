@@ -1,0 +1,29 @@
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:gs="http://www.opengis.net/pidflo/1.0"
+entity="pres:Ellipse@somecell.example.com">
+<tuple id="ellipse">
+<status>
+<gp:geopriv>
+<gp:location-info>
+<gs:Ellipse srsName="urn:ogc:def:crs:EPSG::4326">
+<gml:pos>42.5463 -73.2512</gml:pos>
+<gs:semiMajorAxis uom="urn:ogc:def:uom:EPSG::9001">
+1275
+</gs:semiMajorAxis>
+<gs:semiMinorAxis uom="urn:ogc:def:uom:EPSG::9001">
+670
+</gs:semiMinorAxis>
+<gs:orientation uom="urn:ogc:def:uom:EPSG::9102">
+43.2
+</gs:orientation>
+</gs:Ellipse>
+</gp:location-info>
+<gp:usage-rules/>
+<gp:method>Device-Assisted_A-GPS</gp:method>
+</gp:geopriv>
+</status>
+<timestamp>2007-06-22T20:57:29Z</timestamp>
+</tuple>
+</presence>

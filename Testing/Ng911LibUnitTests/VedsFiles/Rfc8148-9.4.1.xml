@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EmergencyCallData.Control xmlns="urn:ietf:params:xml:ns:EmergencyCallData:control" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <capabilities>
+        <request action="send-data" supported-values="VEDS"/>
+        <request action="lamp"
+        supported-values="head;interior;fog-front;fog-rear;brake;position-front;position-rear;turn-left;turn-right;hazard"/>
+        <request action="msg-static" int-id="3"/>
+        <request action="msg-dynamic"/>
+        <request action="honk"/>
+        <request action="enable-camera" supported-values="backup; interior"/>
+        <request action="door-lock"/>
+    </capabilities>
+</EmergencyCallData.Control>

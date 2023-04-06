@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<presence
+xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:dyn="urn:ietf:params:xml:ns:pidf:geopriv10:dynamic"
+xmlns:gml="http://www.opengis.net/gml"
+entity="pres:alice@example.com">
+    <dm:device id="abc123">
+        <gp:geopriv>
+            <gp:location-info>
+                <dyn:Dynamic>
+                    <dyn:orientation>-3 12</dyn:orientation>
+                    <dyn:speed>24</dyn:speed>
+                    <dyn:heading>278</dyn:heading>
+                </dyn:Dynamic>
+            </gp:location-info>
+            <gp:usage-rules/>
+            <method>gps</method>
+        </gp:geopriv>
+        <timestamp>2009-06-22T20:57:29Z</timestamp>
+        <dm:deviceID>mac:1234567890ab</dm:deviceID>
+    </dm:device>
+</presence>

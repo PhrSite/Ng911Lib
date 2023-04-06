@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EmergencyCallData.Control xmlns="urn:ietf:params:xml:ns:EmergencyCallData:control" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ack received="true" ref="1234567890@atlanta.example.com"/>
+</EmergencyCallData.Control>

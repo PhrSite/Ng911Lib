@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recording xmlns="urn:ietf:params:xml:ns:recording:1">
+    <datamode>partial</datamode>
+    <participant participant_id="srfBElmCRp2QB23b7Mpk0w==">
+        <nameID aor="sip:bob@biloxi.com">
+            <name xml:lang="it">Bob</name>
+        </nameID>
+    </participant>
+    <participantsessionassoc participant_id="srfBElmCRp2QB23b7Mpk0w==" session_id="hVpd7YQgRW2nD22h7q60JQ==">
+        <disassociate-time>2010-12-16T23:41:07Z</disassociate-time>
+    </participantsessionassoc>
+</recording>

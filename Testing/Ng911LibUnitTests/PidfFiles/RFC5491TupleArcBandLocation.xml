@@ -1,0 +1,32 @@
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:gs="http://www.opengis.net/pidflo/1.0"
+entity="pres:paul@somecell.example.com">
+<tuple id="arcband">
+<status>
+<gp:geopriv>
+<gp:location-info>
+<gs:ArcBand srsName="urn:ogc:def:crs:EPSG::4326">
+<gml:pos>-43.5723 153.21760</gml:pos>
+<gs:innerRadius uom="urn:ogc:def:uom:EPSG::9001">
+3594
+</gs:innerRadius>
+<gs:outerRadius uom="urn:ogc:def:uom:EPSG::9001">
+4148
+</gs:outerRadius>
+<gs:startAngle uom="urn:ogc:def:uom:EPSG::9102">
+20
+</gs:startAngle>
+<gs:openingAngle uom="urn:ogc:def:uom:EPSG::9102">
+20
+</gs:openingAngle>
+</gs:ArcBand>
+</gp:location-info>
+<gp:usage-rules/>
+<gp:method>TA-NMR</gp:method>
+</gp:geopriv>
+</status>
+<timestamp>2007-06-22T20:57:29Z</timestamp>
+</tuple>
+</presence>

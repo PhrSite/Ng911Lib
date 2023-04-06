@@ -1,0 +1,37 @@
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:gs="http://www.opengis.net/pidflo/1.0"
+entity="pres:mike@someprism.example.com">
+<tuple id="prism">
+<status>
+<gp:geopriv>
+<gp:location-info>
+<gs:Prism srsName="urn:ogc:def:crs:EPSG::4979">
+<gs:base>
+<gml:Polygon>
+<gml:exterior>
+<gml:LinearRing>
+<gml:posList>
+42.556844 -73.248157 36.6 <!--A-->
+42.656844 -73.248157 36.6 <!--B-->
+42.656844 -73.348157 36.6 <!--C-->
+42.556844 -73.348157 36.6 <!--D-->
+42.556844 -73.248157 36.6 <!--A-->
+</gml:posList>
+</gml:LinearRing>
+</gml:exterior>
+</gml:Polygon>
+</gs:base>
+<gs:height uom="urn:ogc:def:uom:EPSG::9001">
+2.4
+</gs:height>
+</gs:Prism>
+</gp:location-info>
+<gp:usage-rules/>
+<gp:method>Wiremap</gp:method>
+</gp:geopriv>
+</status>
+<timestamp>2007-06-22T20:57:29Z</timestamp>
+</tuple>
+</presence>

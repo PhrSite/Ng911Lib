@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EmergencyCallData.Control xmlns="urn:ietf:params:xml:ns:EmergencyCallData:control" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ack ref="1234567890@atlanta.example.com">
+        <actionResult action="msg-dynamic" success="true"/>
+        <actionResult action="lamp" success="false" reason="unable"
+        details="The requested lamp is inoperable"/>
+    </ack>
+</EmergencyCallData.Control>

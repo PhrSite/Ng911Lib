@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf"
+xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+xmlns:gml="urn:opengis:specification:gml:schema-xsd:feature:v3.0"
+entity="pres:geotarget@example.com">
+<tuple id="sg89ae">
+<status>
+<gp:geopriv>
+<gp:location-info>
+<gml:location>
+<gml:Point gml:id="point1" srsName="epsg:4326">
+<gml:coordinates>37:46:30N 122:25:10W</gml:coordinates>
+</gml:Point>
+</gml:location>
+</gp:location-info>
+<gp:usage-rules>
+<gp:retransmission-allowed>no</gp:retransmission-allowed>
+<gp:retention-expiry>2003-06-23T04:57:29Z</gp:retention-expiry>
+</gp:usage-rules>
+</gp:geopriv>
+</status>
+<timestamp>2003-06-22T20:57:29Z</timestamp>
+</tuple>
+</presence>

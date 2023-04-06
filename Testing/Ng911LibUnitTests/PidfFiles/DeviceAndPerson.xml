@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presence xmlns="urn:ietf:params:xml:ns:pidf" xmlns:gp="urn:ietf:params:xml:ns:pidf:geopriv10"
+    xmlns:gbp="urn:ietf:params:xml:ns:pidf:geopriv10:basicPolicy"
+    xmlns:dm="urn:ietf:params:xml:ns:pidf:data-model"
+		xmlns:gs="http://www.opengis.net/pidflo/1.0"
+		xmlns:gml="http://www.opengis.net/gml">
+    <dm:device id="target123-1">
+        <gp:geopriv>
+            <gp:location-info>
+                <civicAddress xmlns="urn:ietf:params:xml:ns:pidf:geopriv10:civicAddr">
+                    <country>US</country>
+                    <A1>CA</A1>
+                    <A3>Simi Valley</A3>
+                    <RD>Stonebrook</RD>
+                    <STS>Street</STS>
+                    <HNO>311</HNO>
+                    <PC>93065</PC>
+                </civicAddress>
+            </gp:location-info>
+            <gp:usage-rules>
+                <gbp:retransmission-allowed>true</gbp:retransmission-allowed>
+                <gbp:retention-expiry>2016-12-10T20:00:00Z </gbp:retention-expiry>
+            </gp:usage-rules>
+            <gp:method>802.11</gp:method>
+        </gp:geopriv>
+        <dm:deviceID>mac:00-0d-4b-30-72-df</dm:deviceID>
+        <dm:timestamp>2015-07-09T20:57:29Z</dm:timestamp>
+    </dm:device>
+    <dm:person id="12345">
+      <gp:geopriv>
+        <gp:location-info>
+          <gs:Circle xmlns="http://www.opengis.net/gml" srsName="urn:ogc:def:crs:EPSG::4326">
+            <gml:pos>34.247493 -118.791885</gml:pos>
+            <gs:radius uom="urn:ogc:def:uom:EPSG::9001">
+              50
+            </gs:radius>
+          </gs:Circle>
+        </gp:location-info>
+        <gp:usage-rules>
+          <gbp:retransmission-allowed>true</gbp:retransmission-allowed>
+          <gbp:retention-expiry>2016-12-10T20:00:00Z </gbp:retention-expiry>
+        </gp:usage-rules>
+        <gp:method>802.11</gp:method>
+      </gp:geopriv>
+    </dm:person>
+</presence>

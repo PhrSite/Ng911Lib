@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EmergencyCallData.Control
+xmlns="urn:ietf:params:xml:ns:EmergencyCallData:control">
+    <capabilities>
+        <request action="send-data" supported-values="eCall.MSD"/>
+    </capabilities>
+</EmergencyCallData.Control>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EmergencyCallData.Control
+xmlns="urn:ietf:params:xml:ns:EmergencyCallData:control"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <request action="send-data" datatype="VEDS"/>
+    <request action="lamp" element-id="hazard" requested-state="flash" persistence="PT1H"/>
+    <request action="msg-static" int-id="1"/>
+    <request action="msg-dynamic">
+        <text>Remain calm. Help is on the way.</text>
+    </request>
+</EmergencyCallData.Control>
