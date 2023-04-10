@@ -15,7 +15,26 @@ This project has no external dependencies.
 The documentation pages project for this project is called [Ng911LibDocumentation](https://phrsite.github.io/Ng911LibDocumentation). The documentation web site includes class documentation and articles that explain ussage of the classes in this library.
 
 # Installation
-This class library is available on NuGet. It targets .NET 7.
+This class library is available on NuGet.
+
+To install it from the .NET CLI type:
+
+```
+dotnet add package Ng911Lib --version 1.0.0
+```
+
+To install using the NuGET Package Manager Command window type:
+
+```
+NuGet\Install-Package Ng911Lib -Version 1.0.0
+```
+
+Or, you can install it from the Visual Studio GUI.
+
+1. Right click on the project
+2. Select Manage NuGet Packages
+3. Search for Ng911Lib
+4. Click on Install
 
 # Project Structure
 
