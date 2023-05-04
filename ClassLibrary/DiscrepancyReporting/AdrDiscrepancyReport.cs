@@ -61,11 +61,29 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum AdrProblemEnum
     {
+        /// <summary>
+        /// The URI reference could not be resolved
+        /// </summary>
         ReferenceNotResolved,
+        /// <summary>
+        /// Malformed or invalid request
+        /// </summary>
         Malformed,
+        /// <summary>
+        /// Unknown block of data
+        /// </summary>
         UnknownBlock,
+        /// <summary>
+        /// Received incorrect data as verified by the call taker with the caller
+        /// </summary>
         ReceivedIncorrectData,
+        /// <summary>
+        /// Reported when an ECRF is provisioned with more URIs for a location than can be returned
+        /// </summary>
         TooManyUris,
+        /// <summary>
+        /// Other ADR error or problem
+        /// </summary>
         OtherAdr
     }
 }

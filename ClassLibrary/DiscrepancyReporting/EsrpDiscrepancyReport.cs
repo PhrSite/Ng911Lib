@@ -54,8 +54,17 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum EsrpProblemEnum
     {
+        /// <summary>
+        /// Call received
+        /// </summary>
         CallReceived,
+        /// <summary>
+        /// Queue was full
+        /// </summary>
         EngorgedQ,
+        /// <summary>
+        /// Call drought -- no calls received
+        /// </summary>
         CallDrought
     }
 }

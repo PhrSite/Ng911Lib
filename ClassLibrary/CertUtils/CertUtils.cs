@@ -688,6 +688,8 @@ namespace Ng911CertUtils
         /// <param name="IsCa">If true, then the new certificate can be used to sign other certificates
         /// </param>
         /// <param name="strPw">Password for the private key of the certificate</param>
+        /// <param name="Ex">Output. Set to an exception object if an exception occurred. Null if an
+        /// exception did not occur.</param>
         /// <returns>Returns a new X.509 certificate with a private key. Returns null if an
         /// exception occured.</returns>
         public static X509Certificate2 CreateRsaSignedCertificate(X509Certificate2 Root, 

@@ -80,24 +80,81 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum DRTypeEnum
     {
+        /// <summary>
+        /// Policy Store Discrepancy Report
+        /// </summary>
         PolicyStoreDiscrepancyReport, 
+        /// <summary>
+        /// LoST Discrepancy Report
+        /// </summary>
         LostDiscrepancyReport,
+        /// <summary>
+        /// BCF Discrepancy Report
+        /// </summary>
         BcfDiscrepancyReport, 
+        /// <summary>
+        /// Logging Discrepancy Report
+        /// </summary>
         LoggingDiscrepancyReport,
+        /// <summary>
+        /// Call Taker Discrepancy Report
+        /// </summary>
         CallTakerDiscrepancyReport,
+        /// <summary>
+        /// SIP Discrepancy Report
+        /// </summary>
         SipDiscrepancyReport, 
+        /// <summary>
+        /// Permissions Discrepancy Report
+        /// </summary>
         PermissionsDiscrepancyReport,
+        /// <summary>
+        /// GIS Discrepancy Report
+        /// </summary>
         GisDiscrepancyReport, 
+        /// <summary>
+        /// LIS Discrepancy Report
+        /// </summary>
         LisDiscrepancyReport, 
+        /// <summary>
+        /// Policy Discrepancy Report
+        /// </summary>
         PolicyDiscrepancyReport,
+        /// <summary>
+        /// Origination Service Discrepancy Report
+        /// </summary>
         OriginatingServiceDiscrepancyReport,
+        /// <summary>
+        /// Call Transfer Discrepancy Report
+        /// </summary>
         CallTransferDiscrepancyReport, 
+        /// <summary>
+        /// MCS (MSAG Conversion Service) Discrepancy Report
+        /// </summary>
         McsDiscrepancyReport,
+        /// <summary>
+        /// ESRP Discrepancy Report
+        /// </summary>
         EsrpDiscrepancyReport, 
+        /// <summary>
+        /// ADR (Additional Data Repository) Discrepancy Report
+        /// </summary>
         AdrDiscrepancyReport,
+        /// <summary>
+        /// Network Discrepancy Report
+        /// </summary>
         NetworkDiscrepancyReport, 
+        /// <summary>
+        /// IMR (Interactive Media Response) system Discrepancy Reprort
+        /// </summary>
         ImrDiscrepancyReport,
+        /// <summary>
+        /// Test Call Discrepancy Report
+        /// </summary>
         TestCallDiscrepancyReport, 
+        /// <summary>
+        /// Log Signature Certificate Discrepancy Report
+        /// </summary>
         LogSignatureCertificateDiscrepancyReport,
     }
 
@@ -106,11 +163,29 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum DrServerityEnum
     {
+        /// <summary>
+        /// Minor severity
+        /// </summary>
         Minor,
+        /// <summary>
+        /// Moderate severity
+        /// </summary>
         Moderate,
+        /// <summary>
+        /// Operation is degraded
+        /// </summary>
         Degraded,
+        /// <summary>
+        /// Operation is impared
+        /// </summary>
         Impaired,
+        /// <summary>
+        /// Severe
+        /// </summary>
         Severe,
+        /// <summary>
+        /// Critical
+        /// </summary>
         Critical,
     }
 }

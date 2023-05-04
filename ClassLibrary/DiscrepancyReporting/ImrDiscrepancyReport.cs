@@ -44,14 +44,41 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum ImrProblemEnum
     {
+        /// <summary>
+        /// The queue was full
+        /// </summary>
         EngorgedQ,
+        /// <summary>
+        /// Response was incorrect
+        /// </summary>
         ResponseIncorrect,
+        /// <summary>
+        /// Response was confusint
+        /// </summary>
         ResponseConfusing,
+        /// <summary>
+        /// Call transfer was incorrect
+        /// </summary>
         CallTransferIncorrect,
+        /// <summary>
+        /// Excessive silence detected
+        /// </summary>
         ExcessiveSilence,
+        /// <summary>
+        /// Unknow script encountered
+        /// </summary>
         UnknownScript,
+        /// <summary>
+        /// Input failed
+        /// </summary>
         InputFailed,
+        /// <summary>
+        /// Script logic failure
+        /// </summary>
         ScriptLogicFailure,
+        /// <summary>
+        /// Other IMR problem
+        /// </summary>
         OtherImr
     }
 }

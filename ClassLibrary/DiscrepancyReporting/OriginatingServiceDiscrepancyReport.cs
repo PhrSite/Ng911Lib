@@ -77,19 +77,61 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum OriginatingServiceProblemEnum
     {
+        /// <summary>
+        /// Location was not validated by the Location Validation Function (LVF)
+        /// </summary>
         LocationNotLvfValid,
+        /// <summary>
+        /// Location not usable
+        /// </summary>
         LocationNotUsable,
+        /// <summary>
+        /// No ANI (legacy Automatic Number Indication)
+        /// </summary>
         NoAni,
+        /// <summary>
+        /// Bad PIDF-LO data
+        /// </summary>
         BadPidfLo,
+        /// <summary>
+        /// Query timeout
+        /// </summary>
         QueryTimeOut,
+        /// <summary>
+        /// Call was dropped
+        /// </summary>
         CallDropped,
+        /// <summary>
+        /// Incorrect location
+        /// </summary>
         IncorrectLocation,
+        /// <summary>
+        /// Bad SIP message
+        /// </summary>
         BadSip,
+        /// <summary>
+        /// Call drought -- no calls delivered
+        /// </summary>
         CallDrought,
+        /// <summary>
+        /// Call flood -- call overflow
+        /// </summary>
         CallFlood,
+        /// <summary>
+        /// Invalid Additional Data Repository problem
+        /// </summary>
         InvalidAdr,
+        /// <summary>
+        /// Bad additional data
+        /// </summary>
         BadAdditionalData,
+        /// <summary>
+        /// Other Originating Service Provider (OSP) problem
+        /// </summary>
         OtherOsp,
+        /// <summary>
+        /// Secure Telephone Interface (STI) problem
+        /// </summary>
         StiError
     }
 }

@@ -59,10 +59,25 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum PolicyStoreProblemEnum
     {
+        /// <summary>
+        /// Policy was invalid
+        /// </summary>
         PolicyInvalid,
+        /// <summary>
+        /// Policy was altered
+        /// </summary>
         PolicyAltered,
+        /// <summary>
+        /// Signature verfication failed
+        /// </summary>
         SignatureVerificationFailure,
+        /// <summary>
+        /// Policy missing
+        /// </summary>
         PolicyMissing,
+        /// <summary>
+        /// Other policy store error
+        /// </summary>
         OtherPolicyStore
     }
 }

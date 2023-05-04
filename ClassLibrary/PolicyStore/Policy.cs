@@ -61,10 +61,17 @@ namespace PolicyStore
     /// </summary>
     public enum PolicyTypeEnum
     {
+        /// <summary>
+        /// Originating Route Policy
+        /// </summary>
         OriginationRoutePolicy,
-
+        /// <summary>
+        /// Normal Next Hop Policy
+        /// </summary>
         NormalNextHopRoutePolicy,
-
+        /// <summary>
+        /// Other Route Policy
+        /// </summary>
         OtherRoutePolicy
     }
 }

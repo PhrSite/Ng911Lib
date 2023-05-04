@@ -57,17 +57,53 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum GisProblemEnum
     {
+        /// <summary>
+        /// Coverage area gap detected
+        /// </summary>
         Gap,
+        /// <summary>
+        /// Coverage area overlap detected
+        /// </summary>
         Overlap,
+        /// <summary>
+        /// Incorrect LoST
+        /// </summary>
         IncorrectLost,
+        /// <summary>
+        /// Bad geometry
+        /// </summary>
         BadGeometry,
+        /// <summary>
+        /// Duplicate attribute
+        /// </summary>
         DuplicateAttribute,
+        /// <summary>
+        /// Omitted field
+        /// </summary>
         OmittedField,
+        /// <summary>
+        /// Incorrect data type
+        /// </summary>
         IncorrectDataType,
+        /// <summary>
+        /// Address range was incorrect
+        /// </summary>
         AddressRange,
+        /// <summary>
+        /// General provisioning error
+        /// </summary>
         GeneralProvisioning,
+        /// <summary>
+        /// Malformed URI
+        /// </summary>
         MalformedUri,
+        /// <summary>
+        /// Display data problem
+        /// </summary>
         DisplayData,
+        /// <summary>
+        /// Other GIS related problem
+        /// </summary>
         OtherGis
     }
 }

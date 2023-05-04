@@ -58,9 +58,21 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum LoggingProblemEnum
     {
+        /// <summary>
+        /// INVITE SRS (Session Recording Server) error
+        /// </summary>
         InviteSrsError,
+        /// <summary>
+        /// Log event error
+        /// </summary>
         LogEventError,
+        /// <summary>
+        /// Retrieve log event error
+        /// </summary>
         RetrieveLogEventError,
+        /// <summary>
+        /// Other logging error
+        /// </summary>
         OtherLogging
     }
 }

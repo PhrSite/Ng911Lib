@@ -18,6 +18,9 @@ namespace I3SubNot
         public ElementStateType elementState { get; set; } = new ElementStateType();
     }
 
+    /// <summary>
+    /// Class for describing element state
+    /// </summary>
     public class ElementStateType
     {
         /// <summary>

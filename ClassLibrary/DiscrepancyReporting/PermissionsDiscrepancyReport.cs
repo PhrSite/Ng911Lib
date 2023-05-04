@@ -51,15 +51,45 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum PermissionsProblemEnum
     {
+        /// <summary>
+        /// Unable to authenticate
+        /// </summary>
         UnableAuthenticate,
+        /// <summary>
+        /// Unable to subscribe
+        /// </summary>
         UnableSubscribe,
+        /// <summary>
+        /// Able to subscribe
+        /// </summary>
         AbleSubscribe,
+        /// <summary>
+        /// Unable to read
+        /// </summary>
         UnableRead,
+        /// <summary>
+        /// Unable to write
+        /// </summary>
         UnableWrite,
+        /// <summary>
+        /// Unable to delete
+        /// </summary>
         UnableDelete,
+        /// <summary>
+        /// Able to read
+        /// </summary>
         AbleRead,
+        /// <summary>
+        /// Able to write
+        /// </summary>
         AbleWrite,
+        /// <summary>
+        /// Able to delete
+        /// </summary>
         AbleDelete,
+        /// <summary>
+        /// Other permissions related data
+        /// </summary>
         OtherPermissions
     }
 }

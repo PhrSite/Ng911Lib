@@ -9,15 +9,15 @@
     <Authors>Philip Reichl</Authors>
     <Description>A class library containing classes to handle the data schemas for NG9-1-1</Description>
     <PackageOutputPath>\_MyProjects\NuGetPackages</PackageOutputPath>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
-    <GenerateDocumentationFile>False</GenerateDocumentationFile>
-    <DocumentationFile>C:\_MyProjects\Ng911Lib\Ng911Lib.xml</DocumentationFile>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile></DocumentationFile>
     <Copyright>2023 (c) Philip Reichl</Copyright>
     <PackageProjectUrl>https://phrsite.github.io/Ng911LibDocumentation/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/PhrSite/Ng911Lib</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>1.0.0 -- Initial version</PackageReleaseNotes>
+    <PackageReleaseNotes>1.0.1 - Added NgWebSocketClient and I3LogEventClient classes</PackageReleaseNotes>
     <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>

@@ -21,6 +21,9 @@ namespace PolicyRouting
         /// </summary>
         public object extension { get; set; }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public LocationCondition()
         {
             conditionType = nameof(LocationCondition);

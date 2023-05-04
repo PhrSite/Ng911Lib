@@ -66,6 +66,9 @@ namespace Ng911Common
         /// </summary>
         public List<string> requiredAlgorithms { get; set; } = new List<string>();
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public VersionServiceInfoType()
         {
             requiredAlgorithms.Add("none");

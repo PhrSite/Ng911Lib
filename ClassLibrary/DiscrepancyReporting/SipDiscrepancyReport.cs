@@ -67,14 +67,41 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum SipProblemEnum
     {
+        /// <summary>
+        /// Initial INVITE request problem
+        /// </summary>
         InitialINVITE, 
+        /// <summary>
+        /// MESSAGE request problem
+        /// </summary>
         MESSAGE, 
+        /// <summary>
+        /// OPTIONS request problem
+        /// </summary>
         OPTIONS,
+        /// <summary>
+        /// Mid-dialog problem
+        /// </summary>
         MidDialog,
+        /// <summary>
+        /// Required media problem
+        /// </summary>
         RequiredMedia,
+        /// <summary>
+        /// Media problem
+        /// </summary>
         MediaProblem,
+        /// <summary>
+        /// Queue was full
+        /// </summary>
         EngorgedQ,
+        /// <summary>
+        /// Signaling problem
+        /// </summary>
         Signaling,
+        /// <summary>
+        /// Other SIP problem
+        /// </summary>
         OtherSip
     }
 }

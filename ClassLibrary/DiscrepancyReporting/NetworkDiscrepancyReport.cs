@@ -54,11 +54,29 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum NetworkProblemEnum
     {
+        /// <summary>
+        /// Reference not resolved
+        /// </summary>
         ReferenceNotResolved,
+        /// <summary>
+        /// Malformed request
+        /// </summary>
         Malformed,
+        /// <summary>
+        /// Unknown data block
+        /// </summary>
         UnknownBlock,
+        /// <summary>
+        /// Received incorrect data
+        /// </summary>
         ReceivedIncorrectData,
+        /// <summary>
+        /// Too many URIs in request
+        /// </summary>
         TooManyUris,
+        /// <summary>
+        /// Other network problem
+        /// </summary>
         OtherNetwork
     }
 }

@@ -9,7 +9,7 @@ using System.Text.Json.Serialization;
 namespace Ng911Common
 {
     /// <summary>
-    /// Data class for the NENA I3V3 JSON Web Signature type. See Section E.10.4.1 of NENA-STA-010.3.
+    /// Data class for the NENA I3V3 JSON Web Signature type. See Section E.11.4.1 of NENA-STA-010.3.
     /// </summary>
     public class I3Jws
     {
@@ -96,7 +96,7 @@ namespace Ng911Common
         /// and '_' with '/'. See Section 5 of RFC 4648.
         /// The padding character ('=') is not modified.
         /// </summary>
-        /// <param name="b64string"></param>
+        /// <param name="b64Urlstring"></param>
         /// <returns>The Base64Url encoded string</returns>
         public static string Bas64UrlToBase64(string b64Urlstring)
         {

@@ -86,13 +86,37 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum TestCallProblemEnum
     {
+        /// <summary>
+        /// Test INVITE problem
+        /// </summary>
         TestInvite,
+        /// <summary>
+        /// Test MESSAGE problem
+        /// </summary>
         TestMessage,
+        /// <summary>
+        /// Test OPTIONS problem
+        /// </summary>
         TestOptions,
+        /// <summary>
+        /// Test mid-dialog problem
+        /// </summary>
         TestMidDialog,
+        /// <summary>
+        /// Test media problem
+        /// </summary>
         TestMedia,
+        /// <summary>
+        /// Test loopback media problem
+        /// </summary>
         TestLoopbackMedia,
+        /// <summary>
+        /// Test signaling problem
+        /// </summary>
         TestSignaling,
+        /// <summary>
+        /// Other test call problem
+        /// </summary>
         OtherTestCall
     }
 }

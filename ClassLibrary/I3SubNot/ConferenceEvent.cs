@@ -124,6 +124,9 @@ namespace I3SubNot
         [XmlAnyAttribute()]
         public List<System.Xml.XmlAttribute> AnyAttr = null;
         
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public conferencetype() 
         {
             state = "full";
@@ -237,6 +240,9 @@ namespace I3SubNot
         [XmlAnyAttribute()]
         public List<System.Xml.XmlAttribute> AnyAttr = null;
         
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public uristype() 
         {
             state = "full";
@@ -351,6 +357,9 @@ namespace I3SubNot
         [XmlAnyAttribute()]
         public List<System.Xml.XmlAttribute> AnyAttr = null;
         
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public sidebarsbyvaltype()
         {
             state = "full";
@@ -666,6 +675,9 @@ namespace I3SubNot
         [XmlAnyAttribute()]
         public List<System.Xml.XmlAttribute> AnyAttr = null;
         
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public endpointtype() {
             //this.state = statetype.full;
             state = "full";
@@ -871,6 +883,9 @@ namespace I3SubNot
         [XmlAnyAttribute()]
         public List<System.Xml.XmlAttribute> AnyAttr = null;
         
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public usertype() 
         {
             state = "full";
@@ -909,6 +924,9 @@ namespace I3SubNot
         [XmlAnyAttribute()]
         public List<System.Xml.XmlAttribute> AnyAttr = null;
         
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public userstype()
         {
             state = "full";

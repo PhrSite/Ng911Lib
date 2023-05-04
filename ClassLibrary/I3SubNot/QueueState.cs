@@ -16,6 +16,9 @@ namespace I3SubNot
         public QueueStateType queueState { get; set; } = new QueueStateType();
     }
 
+    /// <summary>
+    /// Class for queue state information
+    /// </summary>
     public class QueueStateType
     {
         /// <summary>

@@ -1,53 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.3.32929.385
+VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ng911Lib", "Ng911Lib.csproj", "{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ng911Lib", "Ng911Lib.csproj", "{AD4EF338-8BD5-478A-87D9-B6CC6F6910F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|ARM = Debug|ARM
-		Debug|Default = Debug|Default
 		Release|Any CPU = Release|Any CPU
-		Release|ARM = Release|ARM
-		Release|Default = Release|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Debug|ARM.Build.0 = Debug|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Debug|Default.ActiveCfg = Debug|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Debug|Default.Build.0 = Debug|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Release|ARM.ActiveCfg = Release|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Release|ARM.Build.0 = Release|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Release|Default.ActiveCfg = Release|Any CPU
-		{18E6C52B-C2BB-4BDB-9191-9B911ED5392A}.Release|Default.Build.0 = Release|Any CPU
+		{AD4EF338-8BD5-478A-87D9-B6CC6F6910F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4EF338-8BD5-478A-87D9-B6CC6F6910F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4EF338-8BD5-478A-87D9-B6CC6F6910F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4EF338-8BD5-478A-87D9-B6CC6F6910F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EF657A81-1816-4A9B-B84C-26322C16B777}
-	EndGlobalSection
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|ARM = Debug|ARM
-		Debug|Default = Debug|Default
-		Release|Any CPU = Release|Any CPU
-		Release|ARM = Release|ARM
-		Release|Default = Release|Default
-	EndGlobalSection
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Debug|ARM = Debug|ARM
-		Debug|Default = Debug|Default
-		Release|Any CPU = Release|Any CPU
-		Release|ARM = Release|ARM
-		Release|Default = Release|Default
+		SolutionGuid = {82AB529F-4ED0-4220-9C98-AA46C2A021ED}
 	EndGlobalSection
 EndGlobal

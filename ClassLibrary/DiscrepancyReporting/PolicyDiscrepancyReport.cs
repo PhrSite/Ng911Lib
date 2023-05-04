@@ -52,14 +52,41 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum PolicyProblemEnum
     {
+        /// <summary>
+        /// Invalid URN (Universal Resource Name)
+        /// </summary>
         InvalidUrn,
+        /// <summary>
+        /// Unknown PSAP
+        /// </summary>
         UnknownPSAP,
+        /// <summary>
+        /// Conflicting route
+        /// </summary>
         ConflictingRoute,
+        /// <summary>
+        /// Other conflict
+        /// </summary>
         OtherConflict,
+        /// <summary>
+        /// Incorrect URN
+        /// </summary>
         IncorrectUrn,
+        /// <summary>
+        /// Malformed request
+        /// </summary>
         Malformed,
+        /// <summary>
+        /// Loop detected
+        /// </summary>
         Loop,
+        /// <summary>
+        /// Verification failure
+        /// </summary>
         VerificationFailure,
+        /// <summary>
+        /// Other policy error
+        /// </summary>
         OtherPolicy
     }
 }

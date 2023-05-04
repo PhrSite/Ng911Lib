@@ -57,17 +57,53 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum BcfProblemEnum
     {
+        /// <summary>
+        /// Initial traffic blocked
+        /// </summary>
         InitialTrafficBlocked,
+        /// <summary>
+        /// Mid traffic blocked
+        /// </summary>
         MidTrafficBlocked,
+        /// <summary>
+        /// Bad SDP
+        /// </summary>
         BadSdp,
+        /// <summary>
+        /// Bad SIP message
+        /// </summary>
         BadSip,
+        /// <summary>
+        /// Media loss detected
+        /// </summary>
         MediaLoss,
+        /// <summary>
+        /// Traffic from a bad actor not blocked
+        /// </summary>
         TrafficNotBlockedBadActor,
+        /// <summary>
+        /// Traffic was not blocked when it should have been
+        /// </summary>
         TrafficNotBlocked,
+        /// <summary>
+        /// Media Quality of Service problem
+        /// </summary>
         Qos,
+        /// <summary>
+        /// Bad Call Detail Report
+        /// </summary>
         BadCdr,
+        /// <summary>
+        /// TTY related problem
+        /// </summary>
         Tty,
+        /// <summary>
+        /// Firewall related problem
+        /// </summary>
         Firewall,
+        /// <summary>
+        /// Other BCF problem
+        /// </summary>
         OtherBcf
     }
 }

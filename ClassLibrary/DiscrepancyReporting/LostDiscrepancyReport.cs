@@ -52,9 +52,21 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum LostQueryTypeEnum
     {
+        /// <summary>
+        /// Find service request
+        /// </summary>
         findService, 
+        /// <summary>
+        /// Get service boundary request
+        /// </summary>
         getServiceBoundary,
+        /// <summary>
+        /// List services request
+        /// </summary>
         listServices,
+        /// <summary>
+        /// List services by location request
+        /// </summary>
         listServicesByLocation
     }
 
@@ -63,16 +75,49 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum LostProblemEnum
     {
+        /// <summary>
+        /// Believed to be valid
+        /// </summary>
         BelievedValid,
+        /// <summary>
+        /// Believed to be invalid
+        /// </summary>
         BelievedInvalid,
+        /// <summary>
+        /// No such location
+        /// </summary>
         NoSuchLocation,
+        /// <summary>
+        /// Route is incorrect
+        /// </summary>
         RouteIncorrect,
+        /// <summary>
+        /// Multiple mappings returned
+        /// </summary>
         MultipleMappings,
+        /// <summary>
+        /// Service boundary is incorrect
+        /// </summary>
         ServiceBoundaryIncorrect,
+        /// <summary>
+        /// Service number is incorrect
+        /// </summary>
         ServiceNumberIncorrect,
+        /// <summary>
+        /// Data expired
+        /// </summary>
         DataExpired,
+        /// <summary>
+        /// Incorrect URI returned
+        /// </summary>
         IncorrectUri,
+        /// <summary>
+        /// Location error
+        /// </summary>
         LocationErrorInError,
+        /// <summary>
+        /// Other loST error
+        /// </summary>
         OtherLost
     }
 }

@@ -15,6 +15,9 @@ namespace PolicyRouting
         /// </summary>
         public List<string> mimeList { get; set; }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public MimeBodyCondition()
         {
             conditionType = nameof(MimeBodyCondition);

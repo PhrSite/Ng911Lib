@@ -46,11 +46,29 @@ namespace DiscrepancyReporting
     /// </summary>
     public enum LisProblemEnum
     {
+        /// <summary>
+        /// Incorrect records
+        /// </summary>
         IncorrectRecords,
+        /// <summary>
+        /// Own location unavailable
+        /// </summary>
         OwnLocationUnavailable,
+        /// <summary>
+        /// Location reference not resolved
+        /// </summary>
         LocationReferenceNotResolved,
+        /// <summary>
+        /// Bad PIDF-LO data
+        /// </summary>
         BadPidfLo,
+        /// <summary>
+        /// Incorrect location
+        /// </summary>
         IncorrectLocation,
+        /// <summary>
+        /// Other LIS problem
+        /// </summary>
         OtherLis
     }
 }

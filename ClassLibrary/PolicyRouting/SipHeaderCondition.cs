@@ -32,6 +32,9 @@ namespace PolicyRouting
         /// </summary>
         public string content { get; set; }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public SipHeaderCondition()
         {
             conditionType = nameof(SipHeaderCondition);
