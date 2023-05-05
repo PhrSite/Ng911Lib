@@ -20,6 +20,7 @@
     <PackageReleaseNotes>1.0.1 - Added NgWebSocketClient and I3LogEventClient classes</PackageReleaseNotes>
     <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

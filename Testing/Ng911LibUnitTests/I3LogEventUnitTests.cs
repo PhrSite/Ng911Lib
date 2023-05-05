@@ -6,6 +6,9 @@ using Ng911Lib.Utilities;
 using Ng911Common;
 using I3LogEvents;
 
+using Newtonsoft.Json;
+using System.Text.Json;
+
 namespace UnitTests
 {
     [Trait("Category", "unit")]
@@ -14,7 +17,7 @@ namespace UnitTests
         [Fact]
         public void CallStartLogEvent()
         {
-            CallStartEndLogEvent Csee1 = new CallStartEndLogEvent("CallStartLogEvent");
+            CallStartEndLogEvent Csee1 = BuildCallStartLogEvent();
             SetLogEvent(Csee1);
 
             Csee1.direction = "incoming";
@@ -28,8 +31,28 @@ namespace UnitTests
             I3Jws Jws = new I3Jws(Csee1); ;
             string strJson = I3Jws.Base64UrlStringToJsonString(Jws.payload);
             CallStartEndLogEvent Csee2 = JsonHelper.DeserializeFromString<CallStartEndLogEvent>(strJson);
-            VerifyLogEvent(Csee1, Csee2);
 
+            VerifyCallStartLogEvent(Csee1, Csee2);
+        }
+
+        private CallStartEndLogEvent BuildCallStartLogEvent()
+        {
+            CallStartEndLogEvent Csee1 = new CallStartEndLogEvent("CallStartLogEvent");
+            SetLogEvent(Csee1);
+
+            Csee1.direction = "incoming";
+            Csee1.standardPrimaryCallType = "emergency";
+            Csee1.standardSecondaryCallType = "NG9-1-1 Call";
+            Csee1.localCallType = "local call type";
+            Csee1.localUse = "local use value";
+            Csee1.to = "911";
+            Csee1.from = "8185553333";
+            return Csee1;
+        }
+
+        private void VerifyCallStartLogEvent(CallStartEndLogEvent Csee1, CallStartEndLogEvent Csee2)
+        {
+            VerifyLogEvent(Csee1, Csee2);
             Assert.True(Csee1.direction == Csee2.direction, "direction mismatch");
             Assert.True(Csee1.standardPrimaryCallType == Csee2.standardPrimaryCallType);
             Assert.True(Csee2.standardSecondaryCallType == Csee2.standardSecondaryCallType,
@@ -70,5 +93,31 @@ namespace UnitTests
             Assert.True(Le1.ipAddressPort == Le2.ipAddressPort, "ipAddressPort mismatch");
         }
 
+        /// <summary>
+        /// Serializes a simple C# class with Newtonsoft.Json and deserializes it with Microsoft System.Text.Json
+        /// and compares the results
+        /// </summary>
+        [Fact]
+        public void NewtonsoftToMicrosoft()
+        {
+            CallStartEndLogEvent Csee1 = BuildCallStartLogEvent();
+            string strCsee1 = JsonConvert.SerializeObject(Csee1);
+            CallStartEndLogEvent Csee2 = System.Text.Json.JsonSerializer.Deserialize<CallStartEndLogEvent>(
+                strCsee1);
+            VerifyCallStartLogEvent(Csee1, Csee2);
+        }
+
+        /// <summary>
+        /// Serializes a simple C# class with System.Text.Json and deserializes it with Newtonsoft.Json and
+        /// compares the results.
+        /// </summary>
+        [Fact]
+        public void MicrosoftToNewtonsoft()
+        {
+            CallStartEndLogEvent Csee1 = BuildCallStartLogEvent();
+            string strCsee1 = System.Text.Json.JsonSerializer.Serialize(Csee1);
+            CallStartEndLogEvent Csee2 = JsonConvert.DeserializeObject<CallStartEndLogEvent>(strCsee1);
+            VerifyCallStartLogEvent(Csee1, Csee2);
+        }
     }
 }

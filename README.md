@@ -52,11 +52,13 @@ This directory contains the project files for the Ng911Lib project and the follo
 | DiscrepancyReporting | Data/model classes for implementing the client side and the server side of the discrepancy reporting service. These classes can be used by the different functional elements within a NG9-1-1 system. See Sections 3.7 and E.2 of NENA-STA-010.3b. |
 | Geocode | Classes for the Geocode Conversion Service specified in Sections 4.5.1, 4.5.2 and E.5 of NENA-STA-010.3b. |
 | Held | Classes for the HELD protocol as specified in RFC 5985 HTTP-Enabled Location Delivery |
+| HttpUtils | Contains utility classes for performing HTTP operations, such as the AsyncHttpRequestor class which is a general purpose HTTP(S) client for NG9-1-1 applications. |
 | I3LogEvents | Data/model classes for NG9-1-1 logging as specified in Sections 4.12.3 and E.8 of NENA-STA-010.3b. |
 | I3SubNot | Data/model classes for handling NG9-1-1 SIP Subscribe/Notify event packages such as Element State, Service State, Queue State, etc. |
 | Lost | Data/model classes for handling NG9-1-1 SIP Subscribe/Notify event packages such as Element State, Service State, Queue State, etc. |
 | Msag | Data/model classes for the Master Street Address Guide (MSAG) conversion service. See Sections 4.4.1 and E.4 of NENA-STA-010.3b. |
 | Ng911Common | Data/model classes used by all REST/JSON schemas defined in NENA-STA-010.3b. |
+| NgWebSockets | Contains general purpose classes for performing communications using Web Sockets. |
 | Pidf | Data/model and utility classes for dealing with location data in NG9-1-1 applications. |
 | PolicyRouting | Data/model classes for implemting the NG9-1-1 policy routing rules. See Sections 3.3.3 and E.1 of NENA-STA-010.3b. |
 | PolicyStore | Data/model classes for implementing the server side and the client side of the Policy Store Services defined in Sections 3.3.1 and E.1 of NENA-STA-010.3b. |
