@@ -2,7 +2,7 @@
 //  File:   LoggingDiscrepancyReport.cs                             20 Jan 23 PHR
 /////////////////////////////////////////////////////////////////////////////////////
 
-using I3LogEvents;
+using I3V3.LogEvents;
 
 namespace DiscrepancyReporting
 {

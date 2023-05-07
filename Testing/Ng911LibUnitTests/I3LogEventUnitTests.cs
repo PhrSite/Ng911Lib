@@ -4,7 +4,7 @@
 
 using Ng911Lib.Utilities;
 using Ng911Common;
-using I3LogEvents;
+using I3V3.LogEvents;
 
 using Newtonsoft.Json;
 using System.Text.Json;
@@ -15,52 +15,52 @@ namespace UnitTests
     public class I3LogEventUnitTests
     {
         [Fact]
-        public void CallStartLogEvent()
+        public void CallStartLogEvent_SerializeDeserialize()
         {
-            CallStartEndLogEvent Csee1 = BuildCallStartLogEvent();
-            SetLogEvent(Csee1);
+            CallStartLogEvent Csle1 = BuildCallStartLogEvent();
+            SetLogEvent(Csle1);
 
-            Csee1.direction = "incoming";
-            Csee1.standardPrimaryCallType = "emergency";
-            Csee1.standardSecondaryCallType = "NG9-1-1 Call";
-            Csee1.localCallType = "local call type";
-            Csee1.localUse = "local use value";
-            Csee1.to = "911";
-            Csee1.from = "8185553333";
+            Csle1.direction = "incoming";
+            Csle1.standardPrimaryCallType = "emergency";
+            Csle1.standardSecondaryCallType = "NG9-1-1 Call";
+            Csle1.localCallType = "local call type";
+            Csle1.localUse = "local use value";
+            Csle1.to = "911";
+            Csle1.from = "8185553333";
 
-            I3Jws Jws = new I3Jws(Csee1); ;
+            I3Jws Jws = new I3Jws(Csle1); ;
             string strJson = I3Jws.Base64UrlStringToJsonString(Jws.payload);
-            CallStartEndLogEvent Csee2 = JsonHelper.DeserializeFromString<CallStartEndLogEvent>(strJson);
+            CallStartLogEvent Csle2 = JsonHelper.DeserializeFromString<CallStartLogEvent>(strJson);
 
-            VerifyCallStartLogEvent(Csee1, Csee2);
+            VerifyCallStartLogEvent(Csle1, Csle2);
         }
 
-        private CallStartEndLogEvent BuildCallStartLogEvent()
+        private CallStartLogEvent BuildCallStartLogEvent()
         {
-            CallStartEndLogEvent Csee1 = new CallStartEndLogEvent("CallStartLogEvent");
-            SetLogEvent(Csee1);
+            CallStartLogEvent Csle1 = new CallStartLogEvent();
+            SetLogEvent(Csle1);
 
-            Csee1.direction = "incoming";
-            Csee1.standardPrimaryCallType = "emergency";
-            Csee1.standardSecondaryCallType = "NG9-1-1 Call";
-            Csee1.localCallType = "local call type";
-            Csee1.localUse = "local use value";
-            Csee1.to = "911";
-            Csee1.from = "8185553333";
-            return Csee1;
+            Csle1.direction = "incoming";
+            Csle1.standardPrimaryCallType = "emergency";
+            Csle1.standardSecondaryCallType = "NG9-1-1 Call";
+            Csle1.localCallType = "local call type";
+            Csle1.localUse = "local use value";
+            Csle1.to = "911";
+            Csle1.from = "8185553333";
+            return Csle1;
         }
 
-        private void VerifyCallStartLogEvent(CallStartEndLogEvent Csee1, CallStartEndLogEvent Csee2)
+        private void VerifyCallStartLogEvent(CallStartLogEvent Csle1, CallStartLogEvent Csle2)
         {
-            VerifyLogEvent(Csee1, Csee2);
-            Assert.True(Csee1.direction == Csee2.direction, "direction mismatch");
-            Assert.True(Csee1.standardPrimaryCallType == Csee2.standardPrimaryCallType);
-            Assert.True(Csee2.standardSecondaryCallType == Csee2.standardSecondaryCallType,
+            VerifyLogEvent(Csle1, Csle2);
+            Assert.True(Csle1.direction == Csle2.direction, "direction mismatch");
+            Assert.True(Csle1.standardPrimaryCallType == Csle2.standardPrimaryCallType);
+            Assert.True(Csle2.standardSecondaryCallType == Csle2.standardSecondaryCallType,
                 "standardSecondaryCallType mismatch");
-            Assert.True(Csee1.localCallType == Csee2.localCallType, "localCallType mismatch");
-            Assert.True(Csee1.localUse == Csee2.localUse, "localUse mismatch");
-            Assert.True(Csee1.to == Csee2.to, "to mismatch");
-            Assert.True(Csee1.from == Csee2.from, "from mismatch");
+            Assert.True(Csle1.localCallType == Csle2.localCallType, "localCallType mismatch");
+            Assert.True(Csle1.localUse.ToString() == Csle2.localUse.ToString(), "localUse mismatch");
+            Assert.True(Csle1.to == Csle2.to, "to mismatch");
+            Assert.True(Csle1.from == Csle2.from, "from mismatch");
         }
 
         private void SetLogEvent(LogEvent Le)
@@ -73,7 +73,7 @@ namespace UnitTests
             Le.agencyPositionId = "Position 1";
             Le.callId = "urn:emergency:uid:callid:a56e556d871:bcf.state.pa.us";
             Le.incidentId = "urn:emergency:uid:incidentid:a56e556d871:bcf.state.pa.us";
-            Le.callIdSIP = "243FF53D-169D-4EAF-9FBE-B9613E8CB0D5";
+            Le.callIdSip = "243FF53D-169D-4EAF-9FBE-B9613E8CB0D5";
             Le.ipAddressPort = "192.168.1.2:5060";
         }
 
@@ -89,7 +89,7 @@ namespace UnitTests
             Assert.True(Le1.agencyPositionId == Le2.agencyPositionId, "agencyPositionId mismatch");
             Assert.True(Le1.callId == Le2.callId, "callId mismatch");
             Assert.True(Le1.incidentId == Le2.incidentId, "incidentId mismatch");
-            Assert.True(Le1.callIdSIP == Le2.callIdSIP, "callIdSIP mismatch");
+            Assert.True(Le1.callIdSip == Le2.callIdSip, "callIdSIP mismatch");
             Assert.True(Le1.ipAddressPort == Le2.ipAddressPort, "ipAddressPort mismatch");
         }
 
@@ -100,11 +100,11 @@ namespace UnitTests
         [Fact]
         public void NewtonsoftToMicrosoft()
         {
-            CallStartEndLogEvent Csee1 = BuildCallStartLogEvent();
-            string strCsee1 = JsonConvert.SerializeObject(Csee1);
-            CallStartEndLogEvent Csee2 = System.Text.Json.JsonSerializer.Deserialize<CallStartEndLogEvent>(
+            CallStartLogEvent Csle1 = BuildCallStartLogEvent();
+            string strCsee1 = JsonConvert.SerializeObject(Csle1);
+            CallStartLogEvent Csle2 = System.Text.Json.JsonSerializer.Deserialize<CallStartLogEvent>(
                 strCsee1);
-            VerifyCallStartLogEvent(Csee1, Csee2);
+            VerifyCallStartLogEvent(Csle1, Csle2);
         }
 
         /// <summary>
@@ -114,10 +114,10 @@ namespace UnitTests
         [Fact]
         public void MicrosoftToNewtonsoft()
         {
-            CallStartEndLogEvent Csee1 = BuildCallStartLogEvent();
-            string strCsee1 = System.Text.Json.JsonSerializer.Serialize(Csee1);
-            CallStartEndLogEvent Csee2 = JsonConvert.DeserializeObject<CallStartEndLogEvent>(strCsee1);
-            VerifyCallStartLogEvent(Csee1, Csee2);
+            CallStartLogEvent Csle1 = BuildCallStartLogEvent();
+            string strCsee1 = System.Text.Json.JsonSerializer.Serialize(Csle1);
+            CallStartLogEvent Csle2 = JsonConvert.DeserializeObject<CallStartLogEvent>(strCsee1);
+            VerifyCallStartLogEvent(Csle1, Csle2);
         }
     }
 }
