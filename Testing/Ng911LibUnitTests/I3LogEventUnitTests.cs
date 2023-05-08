@@ -20,14 +20,6 @@ namespace UnitTests
             CallStartLogEvent Csle1 = BuildCallStartLogEvent();
             SetLogEvent(Csle1);
 
-            Csle1.direction = "incoming";
-            Csle1.standardPrimaryCallType = "emergency";
-            Csle1.standardSecondaryCallType = "NG9-1-1 Call";
-            Csle1.localCallType = "local call type";
-            Csle1.localUse = "local use value";
-            Csle1.to = "911";
-            Csle1.from = "8185553333";
-
             I3Jws Jws = new I3Jws(Csle1); ;
             string strJson = I3Jws.Base64UrlStringToJsonString(Jws.payload);
             CallStartLogEvent Csle2 = JsonHelper.DeserializeFromString<CallStartLogEvent>(strJson);
