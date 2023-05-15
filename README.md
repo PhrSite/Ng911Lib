@@ -97,7 +97,7 @@ This directory contains the project files for the Ng911Lib project and the follo
 | Held | Classes for the HELD protocol as specified in RFC 5985 HTTP-Enabled Location Delivery |
 | HttpUtils | Contains utility classes for performing HTTP operations, such as the AsyncHttpRequestor class which is a general purpose HTTP(S) client for NG9-1-1 applications. |
 | I3V3.LogEvents | Data/model classes for NG9-1-1 logging as specified in Sections 4.12.3 and E.8 of NENA-STA-010.3b. Also includes the model classes for the log events specified in the NENA EIDO Conveyance Standard (NENA-STA-024.1a-2023) |
-| I3V3.LoggingHelpers | Containes helper classes for logging I3V3 log events. |
+| I3V3.LoggingHelpers | Contains helper classes for logging I3V3 log events. |
 | I3SubNot | Data/model classes for handling NG9-1-1 SIP Subscribe/Notify event packages such as Element State, Service State, Queue State, etc. |
 | Lost | Data/model classes for handling NG9-1-1 SIP Subscribe/Notify event packages such as Element State, Service State, Queue State, etc. |
 | Msag | Data/model classes for the Master Street Address Guide (MSAG) conversion service. See Sections 4.4.1 and E.4 of NENA-STA-010.3b. |
