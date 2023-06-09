@@ -117,12 +117,8 @@ This directory contains the project files for the Ng911Lib project and the follo
 
 This directory contains the following subdirectories.
 
-
-
 | Directory | Description |
-
 |--------|--------|
-
 | EidoUnitTests | xUnit unit test project for the EidoLib class library |
 
 

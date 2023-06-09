@@ -78,15 +78,16 @@ namespace Ng911CertUtils
         public static readonly List<string> ElementRoles = new List<string>()
         {
             "BCF",
-            "ESRP",
-            "ECRF",
-            "LVF",
             "BRIDGE",
+            "ECRF",
+            "ESRP",
             "LIS",
-            "OCIF",     // Outbound Call Interface Function
             "LNG",
+            "Logger",
             "LPG",
-            "LSRG"
+            "LVF",
+            "LSRG",
+            "OCIF",     // Outbound Call Interface Function
         };
 
         /// <summary>
