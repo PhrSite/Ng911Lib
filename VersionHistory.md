@@ -18,3 +18,9 @@
 | Issue No. | Change Type | Description |
 |--------|--------|-------|
 | NA| Addition | Added the I3LogEventClientMgr class that supports I3V3 logging to multiple I3V3 event loggers. |
+
+## v1.0.3 - 19 Jun 2023
+| Issue No. | Change Type | Description |
+|--------|--------|-------|
+| NA| Addition | Added the queryId property to the SubscriptionTerminatedLogEvent class. |
+

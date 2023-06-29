@@ -1,5 +1,7 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////
 //  File:   SubscriptionTerminatedLogEvent.cs                       5 May 23 PHR
+//  Revised:    19 Jun 23 PHR
+//                -- Added the queryId property.
 /////////////////////////////////////////////////////////////////////////////////////
 
 namespace I3V3.LogEvents;
@@ -21,6 +23,12 @@ public class SubscriptionTerminatedLogEvent : LogEvent
     /// Set to either "outgoing" or "incoming". Required.
     /// </summary>
     public string direction { get; set; }
+
+    /// <summary>
+    /// Unique ID used for matching a response to the query. See Section 2.9 of NENA-STA-024.1a-2023.
+    /// Required.
+    /// </summary>
+    public string queryId { get; set; }
 
     /// <summary>
     /// Should be set to one of: “incident closed”, “expired”, “unsubscribed”, and “internal error”. 

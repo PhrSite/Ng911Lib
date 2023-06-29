@@ -1,88 +1,45 @@
 # Introduction
-
 The Ng911Lib project is a class library that provides a set of classes for the data schemas required for implementing Next Generation 9-1-1 (NG9-1-1) applications. This class library provides classes that enable application developers to create, serialize and deserialize JSON and XML documents used in NG9-1-1.
-
-
 
 This portable, cross-platform class library is written in the C# language and the library package targets the .NET 7.0 environment. It may be used by applications that target the Windows (version 10 or later) or Linux operating systems.
 
-
-
 The following document specifies the design and functional requirements of various functional elements as well as the protocols and interfaces required for those functional elements to communicate with each other.
 
-
-
 >[NENA i3 Standard for Next Generation 9-1-1](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/nena-sta-010.3b-2021_i3_stan.pdf), National Emergency Number Association (NENA) 911 Core Services Committee, i3 Architecture Working Group, NENA-STA-010.3b-2021, October 7, 2021.
-
-
 
 This class library may be used to build many of the NG9-1-1 functional elements described in this standard.
 
 # External Dependancies
-
 This project has no external dependencies.
 
-
-
 # Documentation
-
 The documentation pages project for this project is called [Ng911LibDocumentation](https://phrsite.github.io/Ng911LibDocumentation). The documentation web site includes class documentation and articles that explain usage of the classes in this library.
 
-
-
 # Installation
-
 This class library is available on NuGet.
-
-
 
 To install it from the .NET CLI type:
 
-
-
 ```
-
-dotnet add package Ng911Lib --version 1.0.1
-
+dotnet add package Ng911Lib --version 1.0.3
 ```
-
-
 
 To install using the NuGET Package Manager Command window type:
 
-
-
 ```
-
-NuGet\Install-Package Ng911Lib -Version 1.0.1
-
+NuGet\Install-Package Ng911Lib --version 1.0.3
 ```
-
-
-
 Or, you can install it from the Visual Studio GUI.
 
-
-
 1. Right click on the project
-
 2. Select Manage NuGet Packages
-
 3. Search for Ng911Lib
-
 4. Click on Install
-
-
 
 # Project Structure
 
-
-
 ## ClassLibrary Directory
-
 This directory contains the project files for the Ng911Lib project and the following subdirectories.
-
-
 
 | Directory | Description |
 |--------|--------|
@@ -112,14 +69,12 @@ This directory contains the project files for the Ng911Lib project and the follo
 | Veds | Data/Model classes for the Vehicle Emergency Data Set (VEDS) used in NG9-1-1 Advanced Automatic Crash Notification (AACN) calls. See RFC 8148 Next-Generation Vehicle-Initiated Emergency Calls and Advanced Automatic Collision Notification (AACN) Vehicle Emergency Data Set (VEDS) [APCO/NENA Candidate ANS 2.102.1.2022](https://www.apcointl.org/~documents/standard/21021-2022-aacn-vehicle-data-set-veds). |
 
 
-
 ## Testing Directory
-
-This directory contains the following subdirectories.
+This directory contains the following subdirectory.
 
 | Directory | Description |
 |--------|--------|
-| EidoUnitTests | xUnit unit test project for the EidoLib class library |
+| Ng911UnitTests | xUnit unit test project for the Ng911Lib class library |
 
 
 

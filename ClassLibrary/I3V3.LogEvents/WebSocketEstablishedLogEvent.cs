@@ -22,7 +22,7 @@ public class WebSocketEstablishedLogEvent : LogEvent
     public string direction { get; set; }
 
     /// <summary>
-    /// Status code returned for the Web Socket connection request. Requred.
+    /// Status code returned for the Web Socket connection request. Required.
     /// </summary>
     public string status { get; set; }
 
