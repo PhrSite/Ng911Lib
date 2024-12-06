@@ -1,5 +1,9 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////
 //  File:   I3LogEventClient.cs                                     1 May 23 PHR
+//
+//  Revised:  20 Nov 24 PHR
+//              -- Added the enabled constructor parameter
+//              -- Added the Enable property.
 /////////////////////////////////////////////////////////////////////////////////////
 
 using System.Collections.Concurrent;
@@ -29,12 +33,26 @@ public class I3LogEventClient
     /// <param name="strLoggerName">Name of the logging server. For example: Logger1</param>
     /// <param name="clientCertificate">X.509 certificate to use if mutual authentication is used. May 
     /// be null if mutual authentication is not required.</param>
-    public I3LogEventClient(string strServerUrl, string strLoggerName, X509Certificate2 clientCertificate)
+    /// <param name="enabled">Sets the initial enabled state of the client.</param>
+    public I3LogEventClient(string strServerUrl, string strLoggerName, X509Certificate2 clientCertificate,
+        bool enabled = true)
     {
         m_LoggingPath = strServerUrl + "/LogEvents";
         m_clientCertificate = clientCertificate;
         m_strLoggerName = strLoggerName;
         m_VersionsPath = strServerUrl + "/Versions";
+        m_Enabled = enabled;
+    }
+
+    /// <summary>
+    /// If true then this client will send log events to the log event server and periodically poll the
+    /// log event server. If false, then this client will run but it will not attempt to communicate with
+    /// the log event server.
+    /// </summary>
+    public bool Enable
+    {
+        get { return m_Enabled; }
+        set { m_Enabled = value; }
     }
 
     /// <summary>
@@ -103,7 +121,7 @@ public class I3LogEventClient
     /// <param name="logEvent">I3V3 log event to send.</param>
     public void SendLogEvent(LogEvent logEvent)
     {
-        if (m_Ahr == null || m_Responding == false)
+        if (m_Ahr == null || m_Responding == false || m_Enabled == false)
             return;
 
         m_Events.Enqueue(logEvent);
@@ -144,6 +162,9 @@ public class I3LogEventClient
             return;
 
         m_LastPollTime = Now;
+
+        if (m_Enabled == false)
+            return;
 
         HttpResults Hr = m_Ahr.DoRequestAsync(HttpMethodEnum.GET, m_VersionsPath, null, null, true).Result;
         bool NewStatus = m_Responding;
@@ -210,6 +231,7 @@ public class I3LogEventClient
     private const int WaitTimeMs = 100;
     private const int PollIntervalMs = 5000;
     private DateTime m_LastPollTime = DateTime.MinValue;
+    private bool m_Enabled;
     #endregion
 }
 

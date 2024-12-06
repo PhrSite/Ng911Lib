@@ -24,3 +24,8 @@
 |--------|--------|-------|
 | NA| Addition | Added the queryId property to the SubscriptionTerminatedLogEvent class. |
 
+## v1.0.4 - TBD
+| Issue No. | Change Type | Description |
+|--------|--------|-------|
+| NA| Addition | Added a constructor parameter called Enabled to the I3LogEventClient class. This parameter defaults to true. |
+| NA  | Addition | Added a new bool property called Enable to the I3LogEventClient class. If enabled, the I3LogEventClient will send log events to the log event server. If not enabled the I3ClogEventClient class will run but will no attempt to communicate with the log event server. |

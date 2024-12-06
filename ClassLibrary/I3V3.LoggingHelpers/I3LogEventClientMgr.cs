@@ -113,7 +113,7 @@ public class I3LogEventClientMgr
 
     /// <summary>
     /// This event is fired if an exception occurred when sending a log event to the logging server or if
-    /// the the logging server responded with a a status code other than 200 or 201.
+    /// the logging server responded with a a status code other than 200 or 201.
     /// </summary>
     public event I3LoggingErrorDelegate LoggingServerError;
 

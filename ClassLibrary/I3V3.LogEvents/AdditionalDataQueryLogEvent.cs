@@ -19,7 +19,7 @@ namespace I3V3.LogEvents
         /// <summary>
         /// Contains the body of the request. Required.
         /// Note: RFC 7852 specifies the protocol for requesting Additional Data.
-        /// The requestor sends an HTTP GET so there is no body for a GET request.
+        /// The requestor sends an HTTP GET, there is no body for a GET request.
         /// </summary>
         public string text { get; set; } = "";
 
