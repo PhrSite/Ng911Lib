@@ -130,9 +130,9 @@ namespace Ng911Lib.Utilities
         public const string Sdp = "application/sdp";
 
         /// <summary>
-        /// Content-Type header value for the conference event. See RFC 4575.
+        /// Content-Type header value for the conference event. See Section 9.2 of RFC 4575.
         /// </summary>
-        public const string ConferenceEvent = "application/conference+xml";
+        public const string ConferenceEvent = "application/conference-info+xml";
 
         /// <summary>
         /// SIPREC (SIP Recording Protocol) contents. See RFC 7865.
