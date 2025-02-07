@@ -30,3 +30,4 @@
 | NA| Addition | Added a constructor parameter called Enabled to the I3LogEventClient class. This parameter defaults to true. |
 | NA  | Addition | Added a new bool property called Enable to the I3LogEventClient class. If enabled, the I3LogEventClient will send log events to the log event server. If not enabled the I3ClogEventClient class will run but will no attempt to communicate with the log event server. |
 | NA  | Fix    | Changed ContentTypes.ConferenceEvent from application/conference+xml to application/conference-info+xml to comply with Section 9.2 of RFC 4575. |
+| NA  | Addition | Added Eido = "emergency-eido" to PurposeTypes and Eido = "application/emergency.eido+json to ContentTypes" |

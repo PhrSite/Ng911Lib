@@ -60,5 +60,10 @@ namespace Ng911Lib.Utilities
         /// Vehicle emergency data set schema. See RFC 8148.
         /// </summary>
         public const string Veds = "EmergencyCallData.VEDS";
+
+        /// <summary>
+        /// Emergency Incident Data Object (EIDO). See Section 4.7.4 of NENA-STA-010.3b
+        /// </summary>
+        public const string Eido = "emergency-eido";
     }
 }

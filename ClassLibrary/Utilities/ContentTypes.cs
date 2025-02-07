@@ -139,5 +139,9 @@ namespace Ng911Lib.Utilities
         /// </summary>
         public const string SipRecMetaData = "application/rs-metadata+xml";
 
+        /// <summary>
+        /// Emergency Indident Data Object (EIDO). See NENA-STA-024.1a-2023
+        /// </summary>
+        public const string Eido = "application/emergency.eido+json)";
     }
 }
