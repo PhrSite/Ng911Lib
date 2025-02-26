@@ -21,13 +21,13 @@ This class library is available on NuGet.
 To install it from the .NET CLI type:
 
 ```
-dotnet add package Ng911Lib --version 1.0.3
+dotnet add package Ng911Lib --version 1.1.0
 ```
 
 To install using the NuGET Package Manager Command window type:
 
 ```
-NuGet\Install-Package Ng911Lib --version 1.0.3
+NuGet\Install-Package Ng911Lib --version 1.1.0
 ```
 Or, you can install it from the Visual Studio GUI.
 

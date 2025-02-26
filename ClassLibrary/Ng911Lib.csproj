@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
@@ -9,18 +9,18 @@
     <Authors>Philip Reichl</Authors>
     <Description>A class library containing classes to handle the data schemas for NG9-1-1</Description>
     <PackageOutputPath>\_MyProjects\NuGetPackages</PackageOutputPath>
-    <AssemblyVersion>1.0.3</AssemblyVersion>
-    <FileVersion>1.0.3</FileVersion>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <FileVersion>1.1.0</FileVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <DocumentationFile></DocumentationFile>
     <Copyright>2023 (c) Philip Reichl</Copyright>
     <PackageProjectUrl>https://phrsite.github.io/Ng911LibDocumentation/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/PhrSite/Ng911Lib</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes>1.0.3 - Added the queryId property to the SubscriptionTerminatedLogEvent class</PackageReleaseNotes>
+    <PackageReleaseNotes>1.1.0 - Various additions, fixes and changes . See VersionHistory.md. Changed the Target Framework from .NET 7.0 to .NET 8.0.</PackageReleaseNotes>
     <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.3</Version>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
