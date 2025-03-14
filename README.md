@@ -9,11 +9,11 @@ The following document specifies the design and functional requirements of vario
 
 This class library may be used to build many of the NG9-1-1 functional elements described in this standard.
 
+# Documentation
+The documentation pages project for this project is located at [https://phrsite.github.io/Ng911Lib](https://phrsite.github.io/Ng911Lib). The documentation web site includes class documentation and articles that explain usage of the classes in this library.
+
 # External Dependancies
 This project has no external dependencies.
-
-# Documentation
-The documentation pages project for this project is called [Ng911LibDocumentation](https://phrsite.github.io/Ng911LibDocumentation). The documentation web site includes class documentation and articles that explain usage of the classes in this library.
 
 # Installation
 This class library is available on NuGet.
