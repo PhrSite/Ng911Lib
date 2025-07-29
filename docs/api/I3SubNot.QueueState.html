@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class QueueState ">
     
-    <meta name="description" content="Data class for the I3V3 Queue State NOTIFY body. See Section 4.2.1.3 and Section E.11.3.3 of NENA-STA-010.3.">
+    <meta name="description" content="Data class for the I3V3 Queue state NOTIFY body. See Section 4.2.1.3 and Section E.11.3.3 of NENA-STA-010.3.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -808,9 +808,6 @@
                             <a href="I3SubNot.ElementState.html" title="ElementState" class="">ElementState</a>
                           </li>
                           <li class="">
-                            <a href="I3SubNot.ElementStateType.html" title="ElementStateType" class="">ElementStateType</a>
-                          </li>
-                          <li class="">
                             <a href="I3SubNot.EsrpNotify.html" title="EsrpNotify" class="">EsrpNotify</a>
                           </li>
                           <li class="">
@@ -818,9 +815,6 @@
                           </li>
                           <li class="active">
                             <a href="I3SubNot.QueueState.html" title="QueueState" class="active">QueueState</a>
-                          </li>
-                          <li class="">
-                            <a href="I3SubNot.QueueStateType.html" title="QueueStateType" class="">QueueStateType</a>
                           </li>
                           <li class="">
                             <a href="I3SubNot.SecurityPostureType.html" title="SecurityPostureType" class="">SecurityPostureType</a>
@@ -1871,8 +1865,7 @@
 
 
   <h1 id="I3SubNot_QueueState" data-uid="I3SubNot.QueueState" class="text-break">Class QueueState</h1>
-  <div class="markdown level0 summary"><p>Data class for the I3V3 Queue State NOTIFY body. See Section 4.2.1.3 and Section E.11.3.3 of
-NENA-STA-010.3.</p>
+  <div class="markdown level0 summary"><p>Data class for the I3V3 Queue state NOTIFY body. See Section 4.2.1.3 and Section E.11.3.3 of NENA-STA-010.3.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -1910,23 +1903,267 @@ NENA-STA-010.3.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class QueueState</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_queueState.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.queueState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_Active.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.Active%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L16">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L75">View Source</a>
   </span>
-  <a id="I3SubNot_QueueState_queueState_" data-uid="I3SubNot.QueueState.queueState*"></a>
-  <h4 id="I3SubNot_QueueState_queueState" data-uid="I3SubNot.QueueState.queueState">queueState</h4>
-  <div class="markdown level1 summary"><p>Contains the queue state information. Required.</p>
+  <h4 id="I3SubNot_QueueState_Active" data-uid="I3SubNot.QueueState.Active">Active</h4>
+  <div class="markdown level1 summary"><p>One or more entities are actively available or are currently handling calls being enqueued</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public QueueStateType queueState { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public const string Active = &quot;Active&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_Disabled.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.Disabled%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L83">View Source</a>
+  </span>
+  <h4 id="I3SubNot_QueueState_Disabled" data-uid="I3SubNot.QueueState.Disabled">Disabled</h4>
+  <div class="markdown level1 summary"><p>The queue is disabled by management action and no calls may be enqueued</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Disabled = &quot;Disabled&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_Full.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.Full%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L87">View Source</a>
+  </span>
+  <h4 id="I3SubNot_QueueState_Full" data-uid="I3SubNot.QueueState.Full">Full</h4>
+  <div class="markdown level1 summary"><p>The queue is full, and no new calls can be enqueued on it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Full = &quot;Full&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_Inactive.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.Inactive%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L79">View Source</a>
+  </span>
+  <h4 id="I3SubNot_QueueState_Inactive" data-uid="I3SubNot.QueueState.Inactive">Inactive</h4>
+  <div class="markdown level1 summary"><p>No entity is available or actively handling calls being enqueued</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Inactive = &quot;Inactive&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_QueueStateValues.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.QueueStateValues%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L105">View Source</a>
+  </span>
+  <h4 id="I3SubNot_QueueState_QueueStateValues" data-uid="I3SubNot.QueueState.QueueStateValues">QueueStateValues</h4>
+  <div class="markdown level1 summary"><p>Allowable values for the queue state of a PSAP's call queue. See Section 10.17 of NENA-STA-010.3b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] QueueStateValues</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_ResourceExhausted.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.ResourceExhausted%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L96">View Source</a>
+  </span>
+  <h4 id="I3SubNot_QueueState_ResourceExhausted" data-uid="I3SubNot.QueueState.ResourceExhausted">ResourceExhausted</h4>
+  <div class="markdown level1 summary"><p>The downstream entity cannot accept any more calls for a reason other than one of the above conditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ResourceExhausted = &quot;ResourceExhausted&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_Standby.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.Standby%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L92">View Source</a>
+  </span>
+  <h4 id="I3SubNot_QueueState_Standby" data-uid="I3SubNot.QueueState.Standby">Standby</h4>
+  <div class="markdown level1 summary"><p>The queue has one or more entities that are available to take calls, but the queue is not presently in
+use. When a call is enqueued, the state changes to “Active”</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Standby = &quot;Standby&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_Unreachable.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.Unreachable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L100">View Source</a>
+  </span>
+  <h4 id="I3SubNot_QueueState_Unreachable" data-uid="I3SubNot.QueueState.Unreachable">Unreachable</h4>
+  <div class="markdown level1 summary"><p>The queue is unreachable. Used by the subscriber to provide a value when it is unable to subscribe.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Unreachable = &quot;Unreachable&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_queueLength.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.queueLength%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L40">View Source</a>
+  </span>
+  <a id="I3SubNot_QueueState_queueLength_" data-uid="I3SubNot.QueueState.queueLength*"></a>
+  <h4 id="I3SubNot_QueueState_queueLength" data-uid="I3SubNot.QueueState.queueLength">queueLength</h4>
+  <div class="markdown level1 summary"><p>Integer indicating current number of calls in the queue. Required</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int queueLength { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -1938,7 +2175,108 @@ NENA-STA-010.3.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="I3SubNot.QueueStateType.html">QueueStateType</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_queueMaxLength.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.queueMaxLength%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L50">View Source</a>
+  </span>
+  <a id="I3SubNot_QueueState_queueMaxLength_" data-uid="I3SubNot.QueueState.queueMaxLength*"></a>
+  <h4 id="I3SubNot_QueueState_queueMaxLength" data-uid="I3SubNot.QueueState.queueMaxLength">queueMaxLength</h4>
+  <div class="markdown level1 summary"><p>Integer indicating maximum length of the queue. Required</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public int queueMaxLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_queueUri.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.queueUri%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L31">View Source</a>
+  </span>
+  <a id="I3SubNot_QueueState_queueUri_" data-uid="I3SubNot.QueueState.queueUri*"></a>
+  <h4 id="I3SubNot_QueueState_queueUri" data-uid="I3SubNot.QueueState.queueUri">queueUri</h4>
+  <div class="markdown level1 summary"><p>SIP URI of queue. Required</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string queueUri { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState_state.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState.state%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L65">View Source</a>
+  </span>
+  <a id="I3SubNot_QueueState_state_" data-uid="I3SubNot.QueueState.state*"></a>
+  <h4 id="I3SubNot_QueueState_state" data-uid="I3SubNot.QueueState.state">state</h4>
+  <div class="markdown level1 summary"><p>Current queue state. Required.</p>
+<p>
+Must be one of the values in the queueState registry. See Section 10.17 of NENA-STA-010.3.
+Allowed values: Active, Inactive, Disabled, Full, Standby,  ResourceExhausted, Unreachable.
+</p>
+<p>Use one of the constant string values defined in this class. For example: QueueState.Active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string state { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1955,7 +2293,7 @@ NENA-STA-010.3.</p>
                     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_QueueState.md&amp;value=---%0Auid%3A%20I3SubNot.QueueState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/QueueState.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

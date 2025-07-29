@@ -18,7 +18,7 @@ namespace DiscrepancyReporting
 
         /// <summary>
         /// For an InvalidADR, the status code returned with the rejection of the ADR dereference attempt. 
-        /// For STIerror, the status code returned in the Reason header field when the STI Verification 
+        /// For STIerror, the status code returned in the reason header field when the STI Verification 
         /// Service(STI-VS) encounters a validation failure (see Section 4.21.1 of NENA-STA-010.3).
         /// Conditional: REQUIRED when using InvalidADR or STIerror.
         /// </summary>

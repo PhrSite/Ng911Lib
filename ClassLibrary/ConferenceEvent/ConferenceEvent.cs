@@ -1,7 +1,7 @@
 ﻿/////////////////////////////////////////////////////////////////////////////////////
 //  File:   ConferenceEvent.cs                                      3 Feb 23 PHR
 //
-//  Description:    Classes for the SIP Event Package for Conference State XML
+//  Description:    Classes for the SIP Event Package for Conference state XML
 //                  schema defined in RFC 4575. The classes were originally generated
 //                  with xsd.exe. This XSD file is available from the IETF XML Registry:
 //  https://www.iana.org/assignments/xml-registry/schema/conference-info.xsd
@@ -333,7 +333,7 @@ namespace ConferenceEvent
         public List<conferencetype> entry = new List<conferencetype>();
 
         /// <summary>
-        /// State of the sub-conference information.
+        /// state of the sub-conference information.
         /// </summary>
         [XmlAttribute()]
         public statetype state;

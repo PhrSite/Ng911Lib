@@ -78,17 +78,17 @@ namespace Ng911Lib.Utilities
         public const string Lost = "application/lost+xml";
 
         /// <summary>
-        /// Element State contents. See Section 2.4.1 of NENA-STA-010.3b.
+        /// Element state contents. See Section 2.4.1 of NENA-STA-010.3b.
         /// </summary>
         public const string ElementState = "application/EmergencyCallData.ElementState+json";
 
         /// <summary>
-        /// Service State contents. See Section 2.4.2 of NENA-STA-010.3b.
+        /// Service state contents. See Section 2.4.2 of NENA-STA-010.3b.
         /// </summary>
         public const string ServiceState = "application/EmergencyCallData.ServiceState+json";
 
         /// <summary>
-        /// Queue State contents. See Section 4.2.1.3 of NENA-STA-010.3b.
+        /// Queue state contents. See Section 4.2.1.3 of NENA-STA-010.3b.
         /// </summary>
         public const string QueueState = "application/EmergencyCallData.QueueState+json";
 

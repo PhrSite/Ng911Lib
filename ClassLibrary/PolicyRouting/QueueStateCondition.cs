@@ -20,7 +20,7 @@ namespace PolicyRouting
         public string condition { get; set; }
 
         /// <summary>
-        /// Must be set to one of the values in the Queue State Registry. See Section 10.17 of 
+        /// Must be set to one of the values in the Queue state Registry. See Section 10.17 of 
         /// NENA-STA-010.3. Required.
         /// </summary>
         public string value { get; set; }

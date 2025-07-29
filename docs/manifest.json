@@ -3154,7 +3154,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "I3SubNot.ElementState",
-      "Summary": "<p sourcefile=\"api/I3SubNot.ElementState.yml\" sourcestartlinenumber=\"1\">Data class for the I3V3 Element State NOTIFY body. See Section 2.4.1 and Section E.11.3.1 of\nNENA-STA-010.3.\nNote: Section 2.4.1 does not agree with the JSON schema defined in Section E.11.3.1 so this class\nuses the schema defined in E.11.3.1.</p>\n"
+      "Summary": "<p sourcefile=\"api/I3SubNot.ElementState.yml\" sourcestartlinenumber=\"1\">Data class for the I3V3 Element State NOTIFY body. See Section 2.4.1 and Section E.11.3.1 of\nNENA-STA-010.3b.</p>\n<p>\nNote: Section 2.4.1 does not agree with the JSON schema defined in Section E.11.3.1, so this class \nuses the schema defined in E.11.3.1.\n</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3210,7 +3210,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "I3SubNot.QueueState",
-      "Summary": "<p sourcefile=\"api/I3SubNot.QueueState.yml\" sourcestartlinenumber=\"1\">Data class for the I3V3 Queue State NOTIFY body. See Section 4.2.1.3 and Section E.11.3.3 of\nNENA-STA-010.3.</p>\n"
+      "Summary": "<p sourcefile=\"api/I3SubNot.QueueState.yml\" sourcestartlinenumber=\"1\">Data class for the I3V3 Queue state NOTIFY body. See Section 4.2.1.3 and Section E.11.3.3 of NENA-STA-010.3.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3252,7 +3252,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "I3SubNot.ServiceState",
-      "Summary": "<p sourcefile=\"api/I3SubNot.ServiceState.yml\" sourcestartlinenumber=\"1\">Data class for the I3 Service State NOTIFY body. See Section 2.4.2 and Section E.11.3.4 of\nNENA-STA-010.3.</p>\n"
+      "Summary": "<p sourcefile=\"api/I3SubNot.ServiceState.yml\" sourcestartlinenumber=\"1\">Data class for the I3 Service state NOTIFY body. See Section 2.4.2 and Section E.11.3.4 of NENA-STA-010.3.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6094,7 +6094,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "PolicyRouting.ServiceStateCondition",
-      "Summary": "<p sourcefile=\"api/PolicyRouting.ServiceStateCondition.yml\" sourcestartlinenumber=\"1\">Tests the Service State of a service. See Sections 3.3.3.10 and E.1.1 of NENA-STA-010.3.</p>\n"
+      "Summary": "<p sourcefile=\"api/PolicyRouting.ServiceStateCondition.yml\" sourcestartlinenumber=\"1\">Tests the Service state of a service. See Sections 3.3.3.10 and E.1.1 of NENA-STA-010.3.</p>\n"
     },
     {
       "type": "ManagedReference",

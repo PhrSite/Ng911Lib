@@ -2,7 +2,7 @@
 //  File:   ConferenceEvent.cs                                      12 Jan 23 PHR
 //
 //  Description:    This file contains the classes for the SIP Event Package for 
-//                  Conference State XML schema defined in RFC 4575. The classes
+//                  Conference state XML schema defined in RFC 4575. The classes
 //                  were originally generated with the xsd.exe command line tool
 //                  from the file called ConferenceEvent.xsd. This XSD file was
 //                  downloaded from the IETF XML Registry:
@@ -346,7 +346,7 @@ namespace I3SubNot
         public List<conferencetype> entry = new List<conferencetype>();
 
         /// <summary>
-        /// State of the sub-conference information.
+        /// state of the sub-conference information.
         /// </summary>
         [XmlAttribute()]
         public string state;

@@ -16,7 +16,7 @@ public class HttpResults
     /// </summary>
     public HttpStatusCode StatusCode;
     /// <summary>
-    /// Reason phrase that was returned in the HTTP response
+    /// reason phrase that was returned in the HTTP response
     /// </summary>
     public string Reason;
     /// <summary>

@@ -68,7 +68,7 @@ namespace AgencyLocator
         public string mdsImageInterfaceUri { get; set; }
 
         /// <summary>
-        /// Service State Subscription URI for a service, such as the PSAP service.
+        /// Service state Subscription URI for a service, such as the PSAP service.
         /// </summary>
         public string svcStateUri { get; set; }
 

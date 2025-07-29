@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class ElementState ">
     
-    <meta name="description" content="Data class for the I3V3 Element State NOTIFY body. See Section 2.4.1 and Section E.11.3.1 of NENA-STA-010.3. Note: Section 2.4.1 does not agree with the JSON schema defined in Section E.11.3.1 so this class uses the schema defined in E.11.3.1.">
+    <meta name="description" content="Data class for the I3V3 Element State NOTIFY body. See Section 2.4.1 and Section E.11.3.1 of NENA-STA-010.3b.  Note: Section 2.4.1 does not agree with the JSON schema defined in Section E.11.3.1, so this class  uses the schema defined in E.11.3.1.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -808,9 +808,6 @@
                             <a href="I3SubNot.ElementState.html" title="ElementState" class="active">ElementState</a>
                           </li>
                           <li class="">
-                            <a href="I3SubNot.ElementStateType.html" title="ElementStateType" class="">ElementStateType</a>
-                          </li>
-                          <li class="">
                             <a href="I3SubNot.EsrpNotify.html" title="EsrpNotify" class="">EsrpNotify</a>
                           </li>
                           <li class="">
@@ -818,9 +815,6 @@
                           </li>
                           <li class="">
                             <a href="I3SubNot.QueueState.html" title="QueueState" class="">QueueState</a>
-                          </li>
-                          <li class="">
-                            <a href="I3SubNot.QueueStateType.html" title="QueueStateType" class="">QueueStateType</a>
                           </li>
                           <li class="">
                             <a href="I3SubNot.SecurityPostureType.html" title="SecurityPostureType" class="">SecurityPostureType</a>
@@ -1872,9 +1866,11 @@
 
   <h1 id="I3SubNot_ElementState" data-uid="I3SubNot.ElementState" class="text-break">Class ElementState</h1>
   <div class="markdown level0 summary"><p>Data class for the I3V3 Element State NOTIFY body. See Section 2.4.1 and Section E.11.3.1 of
-NENA-STA-010.3.
-Note: Section 2.4.1 does not agree with the JSON schema defined in Section E.11.3.1 so this class
-uses the schema defined in E.11.3.1.</p>
+NENA-STA-010.3b.</p>
+<p>
+Note: Section 2.4.1 does not agree with the JSON schema defined in Section E.11.3.1, so this class 
+uses the schema defined in E.11.3.1.
+</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -1912,23 +1908,334 @@ uses the schema defined in E.11.3.1.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ElementState</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_elementState.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.elementState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState__ctor.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L18">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L37">View Source</a>
   </span>
-  <a id="I3SubNot_ElementState_elementState_" data-uid="I3SubNot.ElementState.elementState*"></a>
-  <h4 id="I3SubNot_ElementState_elementState" data-uid="I3SubNot.ElementState.elementState">elementState</h4>
-  <div class="markdown level1 summary"><p>Contains the element state information. Required.</p>
+  <a id="I3SubNot_ElementState__ctor_" data-uid="I3SubNot.ElementState.#ctor*"></a>
+  <h4 id="I3SubNot_ElementState__ctor" data-uid="I3SubNot.ElementState.#ctor">ElementState()</h4>
+  <div class="markdown level1 summary"><p>Default constructor for serialization</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ElementStateType elementState { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ElementState()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState__ctor_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.%23ctor(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L47">View Source</a>
+  </span>
+  <a id="I3SubNot_ElementState__ctor_" data-uid="I3SubNot.ElementState.#ctor*"></a>
+  <h4 id="I3SubNot_ElementState__ctor_System_String_System_String_System_String_" data-uid="I3SubNot.ElementState.#ctor(System.String,System.String,System.String)">ElementState(string, string, string)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementState(string State, string Domain, string Reason = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">State</span></td>
+        <td><p>Current Element State. Required.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Domain</span></td>
+        <td><p>Element ID for the functional element. Required.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">Reason</span></td>
+        <td><p>Reason that the element state has changed. Optional.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_Down.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.Down%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L111">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_Down" data-uid="I3SubNot.ElementState.Down">Down</h4>
+  <div class="markdown level1 summary"><p>The element is unavailable</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Down = &quot;Down&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_ElementStateValues.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.ElementStateValues%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L120">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_ElementStateValues" data-uid="I3SubNot.ElementState.ElementStateValues">ElementStateValues</h4>
+  <div class="markdown level1 summary"><p>Allowable values for the element state of an element. See Section 10.13 of NENA-STA-010.3b.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string[] ElementStateValues</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_GoingDown.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.GoingDown%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L107">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_GoingDown" data-uid="I3SubNot.ElementState.GoingDown">GoingDown</h4>
+  <div class="markdown level1 summary"><p>The element is being taken out of service</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string GoingDown = &quot;GoingDown&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_Normal.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.Normal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L91">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_Normal" data-uid="I3SubNot.ElementState.Normal">Normal</h4>
+  <div class="markdown level1 summary"><p>The element is operating normally</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Normal = &quot;Normal&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_Overloaded.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.Overloaded%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L103">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_Overloaded" data-uid="I3SubNot.ElementState.Overloaded">Overloaded</h4>
+  <div class="markdown level1 summary"><p>The element is completely overloaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Overloaded = &quot;Overloaded&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_ScheduledMaintenance.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.ScheduledMaintenance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L95">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_ScheduledMaintenance" data-uid="I3SubNot.ElementState.ScheduledMaintenance">ScheduledMaintenance</h4>
+  <div class="markdown level1 summary"><p>The element is undergoing maintenance activities and is not processing requests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ScheduledMaintenance = &quot;ScheduledMaintenance&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_ServiceDisruption.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.ServiceDisruption%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L99">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_ServiceDisruption" data-uid="I3SubNot.ElementState.ServiceDisruption">ServiceDisruption</h4>
+  <div class="markdown level1 summary"><p>The element has significant problems and is unable to process all requests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ServiceDisruption = &quot;ServiceDisruption&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_Unreachable.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.Unreachable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L115">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_Unreachable" data-uid="I3SubNot.ElementState.Unreachable">Unreachable</h4>
+  <div class="markdown level1 summary"><p>Subscriber is unable to contact the functional element</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string Unreachable = &quot;Unreachable&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_elementDomain.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.elementDomain%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L71">View Source</a>
+  </span>
+  <a id="I3SubNot_ElementState_elementDomain_" data-uid="I3SubNot.ElementState.elementDomain*"></a>
+  <h4 id="I3SubNot_ElementState_elementDomain" data-uid="I3SubNot.ElementState.elementDomain">elementDomain</h4>
+  <div class="markdown level1 summary"><p>NG9-1-1 Element Identifier. Identifies the NG9-1-1 functional element reporting Element state.</p>
+<p>
+Must be in the format specified in Section 2.1.3 of NENA-STA-010.3b. For example: esrp1.state.pa.us 
+</p>
+<p>Required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string elementDomain { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -1940,7 +2247,71 @@ uses the schema defined in E.11.3.1.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="I3SubNot.ElementStateType.html">ElementStateType</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_reason.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.reason%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L81">View Source</a>
+  </span>
+  <a id="I3SubNot_ElementState_reason_" data-uid="I3SubNot.ElementState.reason*"></a>
+  <h4 id="I3SubNot_ElementState_reason" data-uid="I3SubNot.ElementState.reason">reason</h4>
+  <div class="markdown level1 summary"><p>Text containing the reason the state was changed, if available. Optional</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string reason { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_state.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.state%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L57">View Source</a>
+  </span>
+  <a id="I3SubNot_ElementState_state_" data-uid="I3SubNot.ElementState.state*"></a>
+  <h4 id="I3SubNot_ElementState_state" data-uid="I3SubNot.ElementState.state">state</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the current Element State.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonIgnore]
+public string state { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1957,7 +2328,7 @@ uses the schema defined in E.11.3.1.</p>
                     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L26" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

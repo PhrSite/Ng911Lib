@@ -1,7 +1,7 @@
 # Introduction
 The Ng911Lib project is a class library that provides a set of classes for the data schemas required for implementing Next Generation 9-1-1 (NG9-1-1) applications. This class library provides classes that enable application developers to create, serialize and deserialize JSON and XML documents used in NG9-1-1.
 
-This portable, cross-platform class library is written in the C# language and the library package targets the .NET 7.0 environment. It may be used by applications that target the Windows (version 10 or later) or Linux operating systems.
+This portable, cross-platform class library is written in the C# language and the library package targets the .NET 9.0 environment. It may be used by applications that target the Windows (version 10 or later) or Linux operating systems.
 
 The following document specifies the design and functional requirements of various functional elements as well as the protocols and interfaces required for those functional elements to communicate with each other.
 

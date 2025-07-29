@@ -731,7 +731,7 @@ namespace AdditionalData
 		}
 
 		/// <summary>
-		/// Gets or sets the first State (region) field. Returns null if not set. The setter creates the 
+		/// Gets or sets the first state (region) field. Returns null if not set. The setter creates the 
 		/// "region" array if it is null.
 		/// </summary>
 		[XmlIgnore]

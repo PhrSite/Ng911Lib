@@ -25,7 +25,7 @@ namespace PolicyRouting
         public int? rnaTimer { get; set; } = null;
 
         /// <summary>
-        /// This contains the value to be used within the Reason parameter of the topmost History-Info
+        /// This contains the value to be used within the reason parameter of the topmost History-Info
         /// header field for the outgoing SIP message. The value MUST be an entry from the 
         /// RouteCause Registry (Section 10.20 of NENA-STA-010.3)
         /// </summary>

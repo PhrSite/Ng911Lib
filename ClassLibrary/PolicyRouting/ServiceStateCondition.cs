@@ -5,7 +5,7 @@
 namespace PolicyRouting
 {
     /// <summary>
-    /// Tests the Service State of a service. See Sections 3.3.3.10 and E.1.1 of NENA-STA-010.3.
+    /// Tests the Service state of a service. See Sections 3.3.3.10 and E.1.1 of NENA-STA-010.3.
     /// </summary>
     public class ServiceStateCondition : ConditionBase
     {
@@ -20,7 +20,7 @@ namespace PolicyRouting
         public string condition { get; set; } = "EQ";
 
         /// <summary>
-        /// Must be set to one of the values in the Service State Registry. See Section 10.12 of 
+        /// Must be set to one of the values in the Service state Registry. See Section 10.12 of 
         /// NENA-010.3. Required.
         /// </summary>
         public string value { get; set; } = "Normal";
