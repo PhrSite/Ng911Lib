@@ -44,6 +44,7 @@ public class I3SubNotUnitTests
         ServiceState serviceState1 = new ServiceState();
         serviceState1.service.name = ServiceType.PSAP;
         serviceState1.service.domain = "psap.allegheny.pa.us";
+        serviceState1.service.serviceId = serviceState1.service.domain;     // 20 Aug 25 PHR
         serviceState1.serviceState.state = ServiceStateType.Normal;
         serviceState1.serviceState.reason = "Set by user";
         string strServiceState = JsonHelper.SerializeToString(serviceState1);
@@ -51,6 +52,7 @@ public class I3SubNotUnitTests
 
         Assert.True(serviceState1.service.name == serviceState2.service.name, "name mismatch");
         Assert.True(serviceState1.service.domain == serviceState2.service.domain, "domain mismatch");
+        Assert.True(serviceState1.service.serviceId == serviceState2.service.serviceId, "serviceId mismatch");
         Assert.True(serviceState1.serviceState.state == serviceState2.serviceState.state, "state mismatch");
         Assert.True(serviceState1.serviceState.reason == serviceState2.serviceState.reason, "reason mismatch");
         Assert.True(serviceState2.securityPosture.posture == null, "posture is not null");

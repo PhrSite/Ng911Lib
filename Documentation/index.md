@@ -5,7 +5,7 @@ This portable, cross-platform class library is written in the C# language and th
 
 The following document specifies the design and functional requirements of various functional elements as well as the protocols and interfaces required for those functional elements to communicate with each other.
 
->[NENA i3 Standard for Next Generation 9-1-1](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/nena-sta-010.3b-2021_i3_stan.pdf), National Emergency Number Association (NENA) 911 Core Services Committee, i3 Architecture Working Group, NENA-STA-010.3b-2021, October 7, 2021.
+>[NENA i3 Standard for Next Generation 9-1-1](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/nena-sta-010.3f-2021_i3_stan.pdf), National Emergency Number Association (NENA) 911 Core Services Committee, i3 Architecture Working Group, NENA-STA-010.3b-2021, October 7, 2021.
 
 ## JSON Schemas Defined in NENA-STA-010.3b
 Appendix E of NENA-STA-010.3b contains the REST/JSON schema definitions specific to NG9-1-1.

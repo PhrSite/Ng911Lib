@@ -1955,13 +1955,13 @@ uses the schema defined in E.11.3.1.
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">State</span></td>
-        <td><p>Current Element State. Required.</p>
+        <td><p>Current Element State. Required. Use one of the constant field values definded by this class.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">Domain</span></td>
-        <td><p>Element ID for the functional element. Required.</p>
+        <td><p>Element ID for the functional element. Required. Must be in the format specified in Section 2.1.3 of NENA-STA-010.3b. For example: esrp1.state.pa.us</p>
 </td>
       </tr>
       <tr>
@@ -1979,7 +1979,7 @@ uses the schema defined in E.11.3.1.
     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_Down.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.Down%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L111">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L117">View Source</a>
   </span>
   <h4 id="I3SubNot_ElementState_Down" data-uid="I3SubNot.ElementState.Down">Down</h4>
   <div class="markdown level1 summary"><p>The element is unavailable</p>
@@ -2009,7 +2009,7 @@ uses the schema defined in E.11.3.1.
     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_ElementStateValues.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.ElementStateValues%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L120">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L126">View Source</a>
   </span>
   <h4 id="I3SubNot_ElementState_ElementStateValues" data-uid="I3SubNot.ElementState.ElementStateValues">ElementStateValues</h4>
   <div class="markdown level1 summary"><p>Allowable values for the element state of an element. See Section 10.13 of NENA-STA-010.3b.</p>
@@ -2036,10 +2036,41 @@ uses the schema defined in E.11.3.1.
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_EventName.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.EventName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L92">View Source</a>
+  </span>
+  <h4 id="I3SubNot_ElementState_EventName" data-uid="I3SubNot.ElementState.EventName">EventName</h4>
+  <div class="markdown level1 summary"><p>Event type for the I3V3 Element State event. See Section 2.4.1 of NENA-STA-010.3.</p>
+<p>This is the value that must be in the Event SIP header for a SIP SUBSCRIBE or a NOTIFY request</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string EventName = &quot;emergency-ElementState&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_GoingDown.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.GoingDown%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L107">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L113">View Source</a>
   </span>
   <h4 id="I3SubNot_ElementState_GoingDown" data-uid="I3SubNot.ElementState.GoingDown">GoingDown</h4>
   <div class="markdown level1 summary"><p>The element is being taken out of service</p>
@@ -2069,7 +2100,7 @@ uses the schema defined in E.11.3.1.
     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_Normal.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.Normal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L91">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L97">View Source</a>
   </span>
   <h4 id="I3SubNot_ElementState_Normal" data-uid="I3SubNot.ElementState.Normal">Normal</h4>
   <div class="markdown level1 summary"><p>The element is operating normally</p>
@@ -2099,7 +2130,7 @@ uses the schema defined in E.11.3.1.
     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_Overloaded.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.Overloaded%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L103">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L109">View Source</a>
   </span>
   <h4 id="I3SubNot_ElementState_Overloaded" data-uid="I3SubNot.ElementState.Overloaded">Overloaded</h4>
   <div class="markdown level1 summary"><p>The element is completely overloaded</p>
@@ -2129,7 +2160,7 @@ uses the schema defined in E.11.3.1.
     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_ScheduledMaintenance.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.ScheduledMaintenance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L95">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L101">View Source</a>
   </span>
   <h4 id="I3SubNot_ElementState_ScheduledMaintenance" data-uid="I3SubNot.ElementState.ScheduledMaintenance">ScheduledMaintenance</h4>
   <div class="markdown level1 summary"><p>The element is undergoing maintenance activities and is not processing requests</p>
@@ -2159,7 +2190,7 @@ uses the schema defined in E.11.3.1.
     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_ServiceDisruption.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.ServiceDisruption%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L99">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L105">View Source</a>
   </span>
   <h4 id="I3SubNot_ElementState_ServiceDisruption" data-uid="I3SubNot.ElementState.ServiceDisruption">ServiceDisruption</h4>
   <div class="markdown level1 summary"><p>The element has significant problems and is unable to process all requests</p>
@@ -2189,7 +2220,7 @@ uses the schema defined in E.11.3.1.
     <a href="https://github.com/PhrSite/Ng911Lib/new/master/apiSpec/new?filename=I3SubNot_ElementState_Unreachable.md&amp;value=---%0Auid%3A%20I3SubNot.ElementState.Unreachable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L115">View Source</a>
+    <a href="https://github.com/PhrSite/Ng911Lib/blob/master/ClassLibrary/I3SubNot/ElementState.cs/#L121">View Source</a>
   </span>
   <h4 id="I3SubNot_ElementState_Unreachable" data-uid="I3SubNot.ElementState.Unreachable">Unreachable</h4>
   <div class="markdown level1 summary"><p>Subscriber is unable to contact the functional element</p>

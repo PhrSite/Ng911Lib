@@ -12,6 +12,9 @@
 //                 for the posture property.
 //              -- Added the SecurityPostureValues property to the SecurityPostureType
 //                 class.
+//              20 Aug 25 PHR
+//              -- Added the serviceId property to the ServiceType class per Section
+//                 2.4.2 of NENA-STA-010.3f.
 /////////////////////////////////////////////////////////////////////////////////////
 
 namespace I3SubNot;
@@ -67,6 +70,16 @@ public class ServiceType
     /// </para>
     /// </summary>
     public string domain { get; set; }
+
+    // 20 Aug 25 PHR
+    /// <summary>
+    /// Service Identifier. Optional.
+    /// <para>
+    /// Service Identifier, if specified MUST be set to the same value as domain. See Section 2.4.2 of 
+    /// NENA-STA-010.3f.
+    /// </para>
+    /// </summary>
+    public string serviceId { get; set; }
 
     /// <summary>
     /// Additional Data Repository (if hosted on an ESInet)

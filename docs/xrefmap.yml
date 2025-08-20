@@ -13553,6 +13553,12 @@ references:
   commentId: F:I3SubNot.ElementState.ElementStateValues
   fullName: I3SubNot.ElementState.ElementStateValues
   nameWithType: ElementState.ElementStateValues
+- uid: I3SubNot.ElementState.EventName
+  name: EventName
+  href: api/I3SubNot.ElementState.html#I3SubNot_ElementState_EventName
+  commentId: F:I3SubNot.ElementState.EventName
+  fullName: I3SubNot.ElementState.EventName
+  nameWithType: ElementState.EventName
 - uid: I3SubNot.ElementState.GoingDown
   name: GoingDown
   href: api/I3SubNot.ElementState.html#I3SubNot_ElementState_GoingDown
@@ -13883,6 +13889,12 @@ references:
   commentId: F:I3SubNot.QueueState.Disabled
   fullName: I3SubNot.QueueState.Disabled
   nameWithType: QueueState.Disabled
+- uid: I3SubNot.QueueState.EventName
+  name: EventName
+  href: api/I3SubNot.QueueState.html#I3SubNot_QueueState_EventName
+  commentId: F:I3SubNot.QueueState.EventName
+  fullName: I3SubNot.QueueState.EventName
+  nameWithType: QueueState.EventName
 - uid: I3SubNot.QueueState.Full
   name: Full
   href: api/I3SubNot.QueueState.html#I3SubNot_QueueState_Full
@@ -14097,6 +14109,12 @@ references:
   commentId: T:I3SubNot.ServiceState
   fullName: I3SubNot.ServiceState
   nameWithType: ServiceState
+- uid: I3SubNot.ServiceState.EventName
+  name: EventName
+  href: api/I3SubNot.ServiceState.html#I3SubNot_ServiceState_EventName
+  commentId: F:I3SubNot.ServiceState.EventName
+  fullName: I3SubNot.ServiceState.EventName
+  nameWithType: ServiceState.EventName
 - uid: I3SubNot.ServiceState.securityPosture
   name: securityPosture
   href: api/I3SubNot.ServiceState.html#I3SubNot_ServiceState_securityPosture
@@ -14350,6 +14368,19 @@ references:
   isSpec: "True"
   fullName: I3SubNot.ServiceType.name
   nameWithType: ServiceType.name
+- uid: I3SubNot.ServiceType.serviceId
+  name: serviceId
+  href: api/I3SubNot.ServiceType.html#I3SubNot_ServiceType_serviceId
+  commentId: P:I3SubNot.ServiceType.serviceId
+  fullName: I3SubNot.ServiceType.serviceId
+  nameWithType: ServiceType.serviceId
+- uid: I3SubNot.ServiceType.serviceId*
+  name: serviceId
+  href: api/I3SubNot.ServiceType.html#I3SubNot_ServiceType_serviceId_
+  commentId: Overload:I3SubNot.ServiceType.serviceId
+  isSpec: "True"
+  fullName: I3SubNot.ServiceType.serviceId
+  nameWithType: ServiceType.serviceId
 - uid: I3SubNot.SubNotConsts
   name: SubNotConsts
   href: api/I3SubNot.SubNotConsts.html

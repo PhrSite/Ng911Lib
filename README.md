@@ -5,7 +5,7 @@ This portable, cross-platform class library is written in the C# language and th
 
 The following document specifies the design and functional requirements of various functional elements as well as the protocols and interfaces required for those functional elements to communicate with each other.
 
->[NENA i3 Standard for Next Generation 9-1-1](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/nena-sta-010.3b-2021_i3_stan.pdf), National Emergency Number Association (NENA) 911 Core Services Committee, i3 Architecture Working Group, NENA-STA-010.3b-2021, October 7, 2021.
+>[NENA i3 Standard for Next Generation 9-1-1](https://cdn.ymaws.com/www.nena.org/resource/resmgr/standards/NENA-STA-010.3f-2021_i3_Stan.pdf), National Emergency Number Association (NENA) 911 Core Services Committee, i3 Architecture Working Group, NENA-STA-010.3f-2021, December 17, 2024.
 
 This class library may be used to build many of the NG9-1-1 functional elements described in this standard.
 
@@ -21,13 +21,13 @@ This class library is available on NuGet.
 To install it from the .NET CLI type:
 
 ```
-dotnet add package Ng911Lib --version 1.1.0
+dotnet add package Ng911Lib --version x.x.x
 ```
 
 To install using the NuGET Package Manager Command window type:
 
 ```
-NuGet\Install-Package Ng911Lib --version 1.1.0
+NuGet\Install-Package Ng911Lib --version x.x.x
 ```
 Or, you can install it from the Visual Studio GUI.
 
