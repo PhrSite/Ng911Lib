@@ -86,6 +86,12 @@ public class ElementState
     }
 
     /// <summary>
+    /// Event type for the I3V3 Element State event. See Section 2.4.1 of NENA-STA-010.3.
+    /// <para>This is the value that must be in the Event SIP header for a SIP SUBSCRIBE or a NOTIFY request</para>
+    /// </summary>
+    public const string EventName = "emergency-ElementState";
+
+    /// <summary>
     /// The element is operating normally
     /// </summary>
     public const string Normal = "Normal";

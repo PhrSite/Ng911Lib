@@ -70,6 +70,12 @@ public class QueueState
     }
 
     /// <summary>
+    /// Event type for the I3V3 Queue State Event. See Section 4.2.1.3 of NENA-STA-010.3.
+    /// <para>This is the value that must be in the Event SIP header for a SIP SUBSCRIBE or a NOTIFY request</para>
+    /// </summary>
+    public const string EventName = "emergency-QueueState";
+
+    /// <summary>
     /// One or more entities are actively available or are currently handling calls being enqueued
     /// </summary>
     public const string Active = "Active";
