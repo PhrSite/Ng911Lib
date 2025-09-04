@@ -1,6 +1,6 @@
 # Version History
 
-## v2.0.0 -- TBD
+## v2.0.0 -- 3 Sep 2025
 | Issue No. | Change Type | Description |
 |--------|--------|-------|
 | NA | Change | Changed the target from .NET 7 to .NET 9 |
