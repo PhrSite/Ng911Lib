@@ -1,5 +1,11 @@
 # Version History
 
+## v2.0.1 -- 29 Sep 2025
+| Issue No. | Change Type | Description |
+|--------|--------|-------|
+| NA | Addition | Ng911CertUtils.KeyUsageParams class -- Added the codeSigning property |
+| NA | Addition | Ng911CertUtils.CertUtils class -- Added support for the Code Signing Enhanced Key Usage Extension for an X.509 certificate. |
+
 ## v2.0.0 -- 3 Sep 2025
 | Issue No. | Change Type | Description |
 |--------|--------|-------|

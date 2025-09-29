@@ -21576,6 +21576,19 @@ references:
   isSpec: "True"
   fullName: Ng911CertUtils.KeyUsageParams.clientAuthentication
   nameWithType: KeyUsageParams.clientAuthentication
+- uid: Ng911CertUtils.KeyUsageParams.codeSigning
+  name: codeSigning
+  href: api/Ng911CertUtils.KeyUsageParams.html#Ng911CertUtils_KeyUsageParams_codeSigning
+  commentId: P:Ng911CertUtils.KeyUsageParams.codeSigning
+  fullName: Ng911CertUtils.KeyUsageParams.codeSigning
+  nameWithType: KeyUsageParams.codeSigning
+- uid: Ng911CertUtils.KeyUsageParams.codeSigning*
+  name: codeSigning
+  href: api/Ng911CertUtils.KeyUsageParams.html#Ng911CertUtils_KeyUsageParams_codeSigning_
+  commentId: Overload:Ng911CertUtils.KeyUsageParams.codeSigning
+  isSpec: "True"
+  fullName: Ng911CertUtils.KeyUsageParams.codeSigning
+  nameWithType: KeyUsageParams.codeSigning
 - uid: Ng911CertUtils.KeyUsageParams.crlSign
   name: crlSign
   href: api/Ng911CertUtils.KeyUsageParams.html#Ng911CertUtils_KeyUsageParams_crlSign

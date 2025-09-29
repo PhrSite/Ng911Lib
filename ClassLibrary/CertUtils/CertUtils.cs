@@ -5,6 +5,9 @@
 //              - Changed from using new X509Certificate2() to X509CertificateLoader.
 //                LoadPkcs12() because loading a certificate in the constructor is
 //                now obsolete.
+//              28 Sep 25 PHR
+//              - Added support for the Code Signing Enhanced Key Usage Extension for
+//                an X.509 certificate.
 /////////////////////////////////////////////////////////////////////////////////////
 
 using System.Security.Cryptography.X509Certificates;
@@ -26,6 +29,16 @@ public static class CertUtils
 
     private const string ClientAuthenticationOid = "1.3.6.1.5.5.7.3.2";
     private const string ServerAuthenticationOid = "1.3.6.1.5.5.7.3.1";
+
+    // 28 Sep 25 PHR
+    private const string CodeSigningOid = "1.3.6.1.5.5.7.3.3";
+
+    /// <summary>
+    /// Quad for valid OtherName values for SubjectAlternativeName extension required in all NG9-1-1 
+    /// PKI certificates.
+    /// Defined in Section 1.2.2 of the PCA Certificate Policy document.
+    /// </summary>
+    private const string OtherNameOid = "1.3.6.1.4.1.55670.1.1";
 
     /// <summary>
     /// In NG9-1-1, the otherName sequence within the Subject Alternate Name (SAN) certificate
@@ -109,13 +122,6 @@ public static class CertUtils
 
         return NgSan;
     }
-
-    /// <summary>
-    /// Quad for valid OtherName values for SubjectAlternativeName extension required in all NG9-1-1 
-    /// PKI certificates.
-    /// Defined in Section 1.2.2 of the PCA Certificate Policy document.
-    /// </summary>
-    private const string OtherNameOid = "1.3.6.1.4.1.55670.1.1";
 
     /// <summary>
     /// Adds the Subject Alternate Name (SAN) extension to a CertificateRequest that contains the
@@ -227,7 +233,10 @@ public static class CertUtils
         if (Kup.decipherOnly == true)
             flags |= X509KeyUsageFlags.DecipherOnly;
 
-        if (Kup.digitalSignature == true)
+        // 28 Sep 25 PHR
+        // If codeSigning is true, then digitalSignature must also be true.
+        if (Kup.digitalSignature == true || Kup.codeSigning == true)
+        //if (Kup.digitalSignature == true)
             flags |= X509KeyUsageFlags.DigitalSignature;
 
         if (Kup.encipherOnly == true)
@@ -247,13 +256,18 @@ public static class CertUtils
 
         req.CertificateExtensions.Add(new X509KeyUsageExtension(flags, false));
 
-        if (Kup.clientAuthentication == true || Kup.serverAuthentication == true)
+        if (Kup.clientAuthentication == true || Kup.serverAuthentication == true || Kup.codeSigning == true)
         {
             OidCollection Oc = new OidCollection();
             if (Kup.clientAuthentication == true)
                 Oc.Add(new Oid(ClientAuthenticationOid, "Client Authentication"));
             if (Kup.serverAuthentication == true)
                 Oc.Add(new Oid(ServerAuthenticationOid, "Server Authentication"));
+
+            // 28 Sep 25 PHR
+            if (Kup.codeSigning == true)
+                Oc.Add(new Oid(CodeSigningOid, "Code Signing"));
+
             X509EnhancedKeyUsageExtension ext1 = new X509EnhancedKeyUsageExtension(Oc, false);
             req.CertificateExtensions.Add(ext1);
         }
