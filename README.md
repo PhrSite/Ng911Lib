@@ -12,7 +12,7 @@ This class library may be used to build many of the NG9-1-1 functional elements 
 # Documentation
 The documentation pages project for this project is located at [https://phrsite.github.io/Ng911Lib](https://phrsite.github.io/Ng911Lib). The documentation web site includes class documentation and articles that explain usage of the classes in this library.
 
-# External Dependancies
+# External Dependencies
 This project has no external dependencies.
 
 # Installation
